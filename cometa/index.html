@@ -1,279 +1,474 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <title>Cometa eSTUDIO</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="HTML5 website template">
-  <meta name="keywords" content="global, template, html, sass, jquery">
-  <meta name="author" content="Bucky Maler">
-  <link rel="stylesheet" href="assets/css/main.css">
+<meta charset="utf-8">
+<title>COMETA</title>
+<!-- Stylesheets -->
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/responsive.css" rel="stylesheet">
+
+<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+<link rel="icon" href="images/favicon.png" type="image/x-icon">
+
+<!-- Responsive -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
+<!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
 </head>
+
 <body>
 
-<!-- notification for small viewports and landscape oriented smartphones -->
-<div class="device-notification">
-  <a class="device-notification--logo" href="#0">
-    <img src="assets/img/cometalogo.png" alt="Global">
-    <p>Global</p>
-  </a>
-  <p class="device-notification--message">Global has so much to offer that we must request you orient your device to portrait or find a larger screen. You won't be disappointed.</p>
-</div>
+<div class="page-wrapper">
 
-<div class="perspective effect-rotate-left">
-  <div class="container"><div class="outer-nav--return"></div>
-    <div id="viewport" class="l-viewport">
-      <div class="l-wrapper">
-        <header class="header">
-          <a class="header--logo" href="#0">
-            <img src="assets/img/logo.png" alt="Global">
-            <p>Global</p>
-          </a>
-          <button class="header--cta cta">Hire Us</button>
-          <div class="header--nav-toggle">
-            <span></span>
-          </div>
-        </header>
-        <nav class="l-side-nav">
-          <ul class="side-nav">
-            <li class="is-active"><span>Inicio</span></li>
-            <li><span>Trabajos</span></li>
-            <li><span>Nosotrxs</span></li>
-            <li><span>Contacto</span></li>
-            <li><span>Tienes una idea?</span></li>
-          </ul>
-        </nav>
-        <ul class="l-main-content main-content">
-          <li class="l-section section section--is-active">
-            <div class="intro">
-              <div class="intro--banner">
-                <h1>Frase de <br>la fucking<br>portada</h1>
-                <button class="cta">Tienes una idea?
-                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
-                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
-                    <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
-                  </g>
-                  </svg>
-                  <span class="btn-background"></span>
-                </button>
-                <img src="assets/img/cometalogo.png" alt="logo">
-              </div>
-              <div class="intro--options">
-                <a href="#0">
-                  <h3>Metiew &amp; Smith</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
-                </a>
-                <a href="#0">
-                  <h3>Fantasy interactive</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
-                </a>
-                <a href="#0">
-                  <h3>Paul &amp; shark</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
-                </a>
-              </div>
-            </div>
-          </li>
-          <li class="l-section section">
-            <div class="work">
-              <h2>Selected work</h2>
-              <div class="work--lockup">
-                <ul class="slider">
-                  <li class="slider--item slider--item-left">
-                    <a href="#0">
-                      <div class="slider--item-image">
-                        <img src="assets/img/work-victory.jpg" alt="Victory">
-                      </div>
-                      <p class="slider--item-title">Victory</p>
-                      <p class="slider--item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
-                    </a>
-                  </li>
-                  <li class="slider--item slider--item-center">
-                    <a href="#0">
-                      <div class="slider--item-image">
-                        <img src="assets/img/work-metiew-smith.jpg" alt="Metiew and Smith">
-                      </div>
-                      <p class="slider--item-title">Metiew &amp; Smith</p>
-                      <p class="slider--item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
-                    </a>
-                  </li>
-                  <li class="slider--item slider--item-right">
-                    <a href="#0">
-                      <div class="slider--item-image">
-                        <img src="assets/img/work-alex-nowak.jpg" alt="Alex Nowak">
-                      </div>
-                      <p class="slider--item-title">Alex Nowak</p>
-                      <p class="slider--item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
-                    </a>
-                  </li>
-                </ul>
-                <div class="slider--prev">
-                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                  viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
-                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
-                    <path d="M561,1169C525,1155,10,640,3,612c-3-13,1-36,8-52c8-15,134-145,281-289C527,41,562,10,590,10c22,0,41,9,61,29
-                    c55,55,49,64-163,278L296,510h575c564,0,576,0,597,20c46,43,37,109-18,137c-19,10-159,13-590,13l-565,1l182,180
-                    c101,99,187,188,193,199c16,30,12,57-12,84C631,1174,595,1183,561,1169z"/>
-                  </g>
-                  </svg>
-                </div>
-                <div class="slider--next">
-                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
-                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
-                    <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
-                  </g>
-                  </svg>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="l-section section">
-            <div class="about">
-              <div class="about--banner">
-                <h2>We<br>believe in<br>passionate<br>people</h2>
-                <a href="#0">Career
-                  <span>
-                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
-                    <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
-                      <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
-                    </g>
-                    </svg>
-                  </span>
-                </a>
-                <img src="assets/img/about-visual.png" alt="About Us">
-              </div>
-              <div class="about--options">
-                <a href="#0">
-                  <h3>Winners</h3>
-                </a>
-                <a href="#0">
-                  <h3>Philosophy</h3>
-                </a>
-                <a href="#0">
-                  <h3>History</h3>
-                </a>
-              </div>
-            </div>
-          </li>
-          <li class="l-section section">
-            <div class="contact">
-              <div class="contact--lockup">
-                <div class="modal">
-                  <div class="modal--information">
-                    <p>Pawia 5, 31-154 Kraków, Poland</p>
-                    <a href="mailto:ouremail@gmail.com">ouremail@gmail.com</a>
-                    <a href="tel:+148126287560">+48 12 628 75 60</a>
-                  </div>
-                  <ul class="modal--options">
-                    <li><a href="#0">Bēhance</a></li>
-                    <li><a href="#0">dribbble</a></li>
-                    <li><a href="mailto:ouremail@gmail.com">Contact Us</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="l-section section">
-            <div class="hire">
-              <h2>De qué se trata?</h2>
-              <!-- checkout formspree.io for easy form setup -->
-              <form class="work-request">
-                <div class="work-request--options">
-                  <span class="options-a">
-                    <input id="opt-1" type="checkbox" value="app design">
-                    <label for="opt-1">
-                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
-                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
-                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
-                      </g>
-                      </svg>
-                      Fotografía 
-                    </label>
-                    <input id="opt-2" type="checkbox" value="graphic design">
-                    <label for="opt-2">
-                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
-                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
-                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
-                      </g>
-                      </svg>
-                      User Experience
-                    </label>
-                    <input id="opt-3" type="checkbox" value="motion design">
-                    <label for="opt-3">
-                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
-                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
-                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
-                      </g>
-                      </svg>
-                      Branding
-                    </label>
-                  </span>
-                  <span class="options-b">
-                    <input id="opt-4" type="checkbox" value="ux design">
-                    <label for="opt-4">
-                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
-                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
-                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
-                      </g>
-                      </svg>
-                      Diseño publicitario
-                    </label>
-                    <input id="opt-5" type="checkbox" value="webdesign">
-                    <label for="opt-5">
-                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
-                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
-                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
-                      </g>
-                      </svg>
-                      Webdesign
-                    </label>
-                    <input id="opt-6" type="checkbox" value="marketing">
-                    <label for="opt-6">
-                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
-                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
-                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
-                      </g>
-                      </svg>
-                      Animación
-                    </label>
-                  </span>
-                </div>
-                <div class="work-request--information">
-                  <div class="information-name">
-                    <input id="name" type="text" spellcheck="false">
-                    <label for="name">Nombre</label>
-                  </div>
-                  <div class="information-email">
-                    <input id="email" type="email" spellcheck="false">
-                    <label for="email">Email</label>
-                  </div>
-                </div>
-                <input type="submit" value="Enviar">
-              </form>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <ul class="outer-nav">
-    <li class="is-active">Home</li>
-    <li>Trabajos</li>
-    <li>Nosotrxs</li>
-    <li>Contacto</li>
-    <li>Tienes una idea?</li>
-  </ul>
-</div>
+    <!-- Preloader -->
+    <div class="preloader"></div>
+ 	
+    <!-- Main Header-->
+    <header class="main-header">
+    	
+    	<!--Header-Upper-->
+        <div class="header-upper">
+        	<div class="auto-container">
+            	<div class="clearfix">
+                	
+                	<div class="pull-left logo-box">
+                    	<div <a href="#"><img src="img/logoblanco.png"  width="200" alt="" title=""></a></div>
+                    </div>
+                   	
+                   	<div class="nav-outer clearfix">
+						<!-- Option Box -->
+						
+						
+						<!-- Main Menu -->
+						<nav class="main-menu navbar-expand-md">
+							<div class="navbar-header">
+								<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+							</div>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>')</script>
-<script src="assets/js/functions-min.js"></script>
+							<div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
+								<ul class="navigation clearfix">
+									<li><a href="#">Nosotrxs</a></li>
+									<li><a href="portafolio.html">Potafolio</a></li>
+									
+									<li><a href="#">Contacto</a></li>
+											
+								</ul>
+							</div>
+							
+						</nav>
+						
+					</div>
+                   
+                </div>
+            </div>
+        </div>
+        <!--End Header Upper-->
+        
+		<!--Sticky Header-->
+        <div class="sticky-header">
+        	<div class="auto-container clearfix">
+            	<!--Logo-->
+            	<div class="logo pull-left">
+                	<a href="index.html" class="img-responsive"><img src="images/logo-small.png" alt="" title=""></a>
+                </div>
+                
+                <!--Right Col-->
+                <div class="right-col pull-right">
+                	<!-- Main Menu -->
+                    <nav class="main-menu navbar-expand-md">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        
+                        <div class="navbar-collapse collapse clearfix" id="navbarSupportedContent1">
+                            <ul class="navigation clearfix">
+								<li><a href="#">Nosotrxs</a></li>
+								<li><a href="portafolio.html">Potafolio</a></li>
+
+								<li><a href="#">Contacto</a></li>
+								
+                            </ul>
+                        </div>
+                    </nav><!-- Main Menu End-->
+                </div>
+                
+            </div>
+        </div>
+        <!--End Sticky Header-->
+		
+    </header>
+    <!--End Main Header -->
+	
+	<!-- Gallery Carousel Section -->
+	<section class="gallery-carousel-section">
+		<div class="auto-container">
+			<div class="single-item-carousel owl-carousel owl-theme">
+				
+				<!-- Project Block -->
+				<div class="project-block">
+					<div class="inner-box">
+						<div class="image">
+							<img src="img/wide.jpg" alt="" />
+							<!-- Overlay Box -->
+							
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</section>
+	<!-- End Gallery Carousel Section -->
+	
+	<!-- News Section -->
+	<section class="news-section">
+		<div class="auto-container">
+			<!-- Sec Title -->
+			<div class="sec-title">
+				<h6>Últimos Trabajos</h6>
+			</div>
+			<div class="row clearfix">
+				
+				<!-- News Block -->
+				<div class="news-block col-lg-4 col-md-6 col-sm-12">
+					<div class="inner-box">
+						<div class="image">
+							<a href="blog-single.html"><img src="img/4.jpg" alt="" /></a>
+							<div class="content-box">
+								<div class="category">categoria</div>
+								<h4><a href="blog-single.html">titulo</a></h4>
+								<div class="post-date">December 19, 2018</div>
+								<a href="blog-single.html" class="theme-btn btn-style-one">Seguir leyendo <span class="arrow flaticon-next-3"></span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<!-- News Block -->
+				<div class="news-block col-lg-4 col-md-6 col-sm-12">
+					<div class="inner-box">
+						<div class="image">
+							<a href="blog-single.html"><img src="img/5.jpg" alt="" /></a>
+							<div class="content-box">
+								<div class="category">categoria</div>
+								<h4><a href="blog-single.html">tituloo</a></h4>
+								<div class="post-date">December 19, 2018</div>
+								<a href="blog-single.html" class="theme-btn btn-style-one">Seguir leyendo <span class="arrow flaticon-next-3"></span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<!-- News Block -->
+				<div class="news-block col-lg-4 col-md-6 col-sm-12">
+					<div class="inner-box">
+						<div class="image">
+							<a href="blog-single.html"><img src="img/6.jpg" alt="" /></a>
+							<div class="content-box">
+								<div class="category">architecture</div>
+								<h4><a href="blog-single.html">Enter a new dimension Augmented  revolution</a></h4>
+								<div class="post-date">December 19, 2018</div>
+								<a href="blog-single.html" class="theme-btn btn-style-one">continue reading <span class="arrow flaticon-next-3"></span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</section>
+	<!-- End News Section -->
+	
+	<!-- Services section -->
+	<section class="services-section">
+		<div class="auto-container">
+			<!-- Sec Title -->
+			<div class="sec-title">
+				<h6>Nuestros Servicios</h6>
+			</div>
+			
+			<div class="row clearfix">
+				
+				<!-- Services Block -->
+				<div class="services-block col-lg-4 col-md-6 col-sm-12">
+					<div class="inner-box">
+						<div class="border-one"></div>
+						<div class="border-two"></div>
+						<div class="content-box">
+							<div class="icon-box">
+								<span class="icon fa fa-heart"></span>
+							</div>
+							<h6><a href="blog-single.html">Branding Design</a></h6>
+							<div class="text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit</div>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Services Block -->
+				<div class="services-block col-lg-4 col-md-6 col-sm-12">
+					<div class="inner-box">
+						<div class="border-one"></div>
+						<div class="border-two"></div>
+						<div class="content-box">
+							<div class="icon-box">
+								<span class="icon flaticon-progress"></span>
+							</div>
+							<h6><a href="blog-single.html">User Expierience</a></h6>
+							<div class="text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit </div>
+						</div>
+					</div>
+				</div>
+				<!-- Services Block -->
+				<div class="services-block col-lg-4 col-md-6 col-sm-12">
+					<div class="inner-box">
+						<div class="border-one"></div>
+						<div class="border-two"></div>
+						<div class="content-box">
+							<div class="icon-box">
+								<span class="icon fa fa-photo"></span>
+							</div>
+							<h6><a href="blog-single.html">Fotografía</a></h6>
+							<div class="text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit </div>
+						</div>
+					</div>
+				</div>
+				<!-- Services Block -->
+				<div class="services-block col-lg-4 col-md-6 col-sm-12">
+					<div class="inner-box">
+						<div class="border-one"></div>
+						<div class="border-two"></div>
+						<div class="content-box">
+							<div class="icon-box">
+								<span class="icon fa fa-book"></span>
+							</div>
+							<h6><a href="blog-single.html">Editorial</a></h6>
+							<div class="text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit </div>
+						</div>
+					</div>
+				</div>
+				<!-- Services Block -->
+				<div class="services-block col-lg-4 col-md-6 col-sm-12">
+					<div class="inner-box">
+						<div class="border-one"></div>
+						<div class="border-two"></div>
+						<div class="content-box">
+							<div class="icon-box">
+								<span class="icon fa fa-html5"></span>
+							</div>
+							<h6><a href="blog-single.html">Diseño web</a></h6>
+							<div class="text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit </div>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Services Block -->
+				<div class="services-block col-lg-4 col-md-6 col-sm-12">
+					<div class="inner-box">
+						<div class="border-one"></div>
+						<div class="border-two"></div>
+						<div class="content-box">
+							<div class="icon-box">
+								<span class="icon fa fa-animate"></span>
+							</div>
+							<h6><a href="blog-single.html">Animación</a></h6>
+							<div class="text">Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			
+		</div>
+	</section>
+	<!-- End Services section -->
+	
+	<!-- Services section Two -->
+	<section class="services-section-two">
+		<div class="auto-container">
+			<!-- Sec Title -->
+			<div class="sec-title">
+				<h6>Equipo</h6>
+			</div>
+			
+			<div class="row clearfix">
+				
+				<!-- Services Block Two -->
+				<div class="services-block-two col-lg-4 col-md-6 col-sm-12">
+					<div class="inner-box">
+						<div class="image">
+							<img src="img/1.jpg" alt="" />
+							<div class="overlay-box">
+								<div class="overlay-inner">
+									<div class="content">
+										<!-- Social Icon Two -->
+										<ul class="social-icon-two">
+											<li><a href="#"><span class="fa fa-facebook"></span></a></li>
+											<li><a href="#"><span class="fa fa-twitter"></span></a></li>
+											<li><a href="#"><span class="fa fa-linkedin"></span></a></li>
+											<li><a href="#"><span class="fa fa-tumblr"></span></a></li>
+										</ul>
+										<div class="text-content">
+											<h6>Adolfo Rodriguez</h6>
+											<div class="designation">Director de Arte</div>
+											<div class="text">Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. </div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Services Block Two -->
+				<div class="services-block-two col-lg-4 col-md-6 col-sm-12">
+					<div class="inner-box">
+						<div class="image">
+							<img src="img/2.jpg" alt="" />
+							<div class="overlay-box">
+								<div class="overlay-inner">
+									<div class="content">
+										<!-- Social Icon Two -->
+										<ul class="social-icon-two">
+											<li><a href="#"><span class="fa fa-facebook"></span></a></li>
+											<li><a href="#"><span class="fa fa-twitter"></span></a></li>
+											<li><a href="#"><span class="fa fa-linkedin"></span></a></li>
+											<li><a href="#"><span class="fa fa-tumblr"></span></a></li>
+										</ul>
+										<div class="text-content">
+											<h6>María Paz Arias</h6>
+											<div class="designation">Diseñadora Gráfica</div>
+											<div class="text">Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. </div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Services Block Two -->
+				<div class="services-block-two col-lg-4 col-md-6 col-sm-12">
+					<div class="inner-box">
+						<div class="image">
+							<img src="img/3.jpg" alt="" />
+							<div class="overlay-box">
+								<div class="overlay-inner">
+									<div class="content">
+										<!-- Social Icon Two -->
+										<ul class="social-icon-two">
+											<li><a href="#"><span class="fa fa-facebook"></span></a></li>
+											<li><a href="#"><span class="fa fa-twitter"></span></a></li>
+											<li><a href="#"><span class="fa fa-linkedin"></span></a></li>
+											<li><a href="#"><span class="fa fa-tumblr"></span></a></li>
+										</ul>
+										<div class="text-content">
+											<h6>Nicolás Carmona</h6>
+											<div class="designation">Diseñador Web</div>
+											<div class="text">Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. </div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</section>
+	<!-- End Services section Two -->
+	
+	<!-- Main Footer -->
+    <footer class="main-footer">
+        	<!--Widgets Section-->
+            <div class="widgets-section">
+            	<div class="clearfix">
+					
+					<!--Footer Column-->
+					<div class="footer-column">
+						<div class="footer-widget logo-widget">
+							<div class="logo">
+								<a href="index.html"><img src="img/logoblanco.png" alt="" /></a>
+							</div>
+						</div>
+					</div>
+					
+					<!--Footer Column-->
+					<div class="footer-column">
+						<div class="footer-widget links-widget">
+							<div class="row cearfix">
+								
+								<div class="column col-lg-12 col-md-12 col-sm-12">
+									<ul class="footer-list">
+										
+										<li><a href="#">Nosotrxs</a></li>
+										<li><a href="#">Contacto</a></li>
+									</ul>
+								</div>								
+							</div>
+						</div>
+					</div>
+					
+					<!--Footer Column-->
+					<div class="footer-column">
+						<div class="footer-widget social-widget">
+							<ul class="social-icon-one">
+								<li><a href="#"><span class="fa fa-facebook"></span></a></li>
+								<li><a href="#"><span class="fa fa-twitter"></span></a></li>
+								<li><a href="#"><span class="fa fa-linkedin"></span></a></li>
+								<li><a href="#"><span class="fa fa-tumblr"></span></a></li>
+								<li><a href="#"><span class="fa fa-vimeo"></span></a></li>
+								<li><a href="#"><span class="fa fa-pinterest"></span></a></li>
+							</ul>
+						</div>
+					</div>
+					
+				</div>
+			</div>		
+		<!-- Footer Bottom -->
+		<div class="footer-bottom">
+			<div class="outer-container">
+				<div class="clearfix">
+					
+					<div class="pull-left">
+						<div class="copyright">&copy; 2019 Cometa.</div>
+					</div>
+					
+					<div class="pull-right">
+						<!--Scroll to top-->
+						<div class="scroll-to-top scroll-to-target" data-target="html"><span class="icon fa fa-angle-double-up"></span></div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		
+	</footer>
+	<!-- End Main Footer -->
+	
+</div>
+<!--End pagewrapper-->
+
+
+<script src="js/jquery.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="js/jquery.fancybox.js"></script>
+<script src="js/appear.js"></script>
+<script src="js/owl.js"></script>
+<script src="js/wow.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/main.js"></script>
+
 </body>
 </html>
