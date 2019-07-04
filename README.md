@@ -1,3 +1,3 @@
-# https://fraediaz.com
+# https://fraediaz.github.io
 
 Sitio web principal
