@@ -108,7 +108,7 @@
                     </div>
                     <!-- /Entry meta -->
 
-                    <h2 class="entry-title">Registrando usuarios con Instagram o cualquier otra red social</h2>
+                    <h2 class="entry-title">Registrando usuarios con Facebook o cualquier otra red social</h2>
                   </header>
                   <!-- /Entry header -->
 
@@ -117,17 +117,132 @@
                     <div class="row">
                       <div class=" col-xs-12 col-sm-12 ">
                         <div class="col-inner">
-                          <p>Nulla nulla nisl, sodales ac nulla ac, consequat vulputate purus. Curabitur tincidunt ipsum vel nibh rutrum accumsan. Nunc ullamcorper posuere leo, vitae aliquet risus pharetra in. Integer turpis eros, iaculis et mi non, pulvinar egestas leo. Etiam sagittis ex turpis, vitae cursus tortor interdum eu. Quisque ultrices nunc eget erat vestibulum euismod. Ut mauris nisi, facilisis at arcu nec, facilisis porttitor lorem.</p><p>Vivamus vitae neque molestie, porta libero sed, tincidunt leo. In nec posuere odio, id rhoncus lorem. Proin id erat ut dolor condimentum viverra. Praesent viverra sed dolor ac luctus. Praesent placerat id lorem quis lacinia.</p>
+                          <p>
+                            La forma mas eficiente y efectiva de registrar usuarios, es a través de redes sociales. En este ejemplo utilizaremos Facebook y podrás experimentar con cualquier otra red social. <br>La documentación está en <a href="https://developers.facebook.com">https://developers.facebook.com</a>
+                          </p>
+                          <p>
+                            Con un típico proyecto y su aplicación base creada ( superusuario, templates, urls ). Comenzaremos esta guía.
+                          </p>
+                          <p>
+                            La librería mas completa y simple para este caso es según mi experiencia <b>django-allauth</b>, se instala con un comando.
+                          </p>
                           
-                          <blockquote class="quote">Maecenas id finibus felis. Etiam vitae nibh et felis efficitur pellentesque. Mauris suscipit sapien nunc, a lacinia nibh feugiat ut. In hac habitasse platea dictumst.
-                            <footer class="quote-author">
-                              <span>Larry L. Johnson</span>
-                            </footer>
+                          <blockquote class="quote">pip install django-allauth
+                            
                           </blockquote>
 
-                          <p>Etiam interdum vulputate risus, vitae elementum neque consectetur sed. Donec at risus dui. Ut in suscipit neque. Vestibulum sit amet lobortis magna, commodo venenatis ante. Cras molestie, ex a auctor lacinia, risus est aliquam risus, sit amet semper purus tortor id ante. Donec lacus ipsum, porttitor et libero a, fringilla auctor quam. Sed in nisl id libero tincidunt aliquet. Aenean dui ipsum, auctor ut leo ut, semper dignissim lacus. Suspendisse faucibus viverra consequat. Maecenas efficitur massa vel eros sagittis dapibus. Nam lobortis mi in turpis hendrerit eleifend. Nulla non massa felis.</p>
-
-                          <p>Donec sit amet dolor ante. Vivamus vel massa accumsan, faucibus quam quis, convallis velit. Aliquam erat volutpat. Integer imperdiet diam quis arcu venenatis, quis sagittis nibh rhoncus. Donec non nisi scelerisque, sodales metus quis, accumsan mauris. Curabitur volutpat risus rutrum erat condimentum tristique. Nullam at felis diam. Quisque dictum felis non ante pretium mollis. Aliquam turpis neque, varius nec diam a, aliquam pulvinar diam. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed ipsum libero, aliquet sed bibendum faucibus, semper a dui.</p>
+                          <p>
+                            En el archivo de configuraciones principales <b>settings.py</b>, a la lista <b>INSTALLED_APPS</b> agregaremos las siguentes lineas, serán las aplicaciones que vamos a necesitar.
+                            <blockquote>
+                              'django.contrib.sites',<br>
+                              'allauth',<br>
+                              'allauth.account',<br>
+                              'allauth.socialaccount',<br>
+                              <b>'allauth.socialaccount.providers.facebook',</b>
+                            </blockquote>
+                          </p>
+                          <p>
+                            Aquí solo utilizaremos facebook, pero la lista de providers disponibles es larga:
+                            <blockquote>
+                              'allauth.socialaccount.providers.agave',
+                              <br> 'allauth.socialaccount.providers.amazon',
+                              <br> 'allauth.socialaccount.providers.angellist',
+                              <br> 'allauth.socialaccount.providers.asana',
+                              <br> 'allauth.socialaccount.providers.auth0',
+                              <br> 'allauth.socialaccount.providers.authentiq',
+                              <br> 'allauth.socialaccount.providers.baidu',
+                              <br> 'allauth.socialaccount.providers.basecamp',
+                              <br> 'allauth.socialaccount.providers.bitbucket',
+                              <br> 'allauth.socialaccount.providers.bitbucket_oauth2',
+                              <br> 'allauth.socialaccount.providers.bitly',
+                              <br> 'allauth.socialaccount.providers.cern',
+                              <br> 'allauth.socialaccount.providers.coinbase',
+                              <br> 'allauth.socialaccount.providers.dataporten',
+                              <br> 'allauth.socialaccount.providers.daum',
+                              <br> 'allauth.socialaccount.providers.digitalocean',
+                              <br> 'allauth.socialaccount.providers.discord',
+                              <br> 'allauth.socialaccount.providers.disqus',
+                              <br> 'allauth.socialaccount.providers.douban',
+                              <br> 'allauth.socialaccount.providers.draugiem',
+                              <br> 'allauth.socialaccount.providers.dropbox',
+                              <br> 'allauth.socialaccount.providers.dwolla',
+                              <br> 'allauth.socialaccount.providers.edmodo',
+                              <br> 'allauth.socialaccount.providers.edx',
+                              <br> 'allauth.socialaccount.providers.eveonline',
+                              <br> 'allauth.socialaccount.providers.evernote',
+                              <br> 'allauth.socialaccount.providers.exist',
+                              <br> 'allauth.socialaccount.providers.facebook',
+                              <br> 'allauth.socialaccount.providers.feedly',
+                              <br> 'allauth.socialaccount.providers.fivehundredpx',
+                              <br> 'allauth.socialaccount.providers.flickr',
+                              <br> 'allauth.socialaccount.providers.foursquare',
+                              <br> 'allauth.socialaccount.providers.fxa',
+                              <br> 'allauth.socialaccount.providers.github',
+                              <br> 'allauth.socialaccount.providers.gitlab',
+                              <br> 'allauth.socialaccount.providers.google',
+                              <br> 'allauth.socialaccount.providers.hubic',
+                              <br> 'allauth.socialaccount.providers.instagram',
+                              <br> 'allauth.socialaccount.providers.jupyterhub',
+                              <br> 'allauth.socialaccount.providers.kakao',
+                              <br> 'allauth.socialaccount.providers.line',
+                              <br> 'allauth.socialaccount.providers.linkedin',
+                              <br> 'allauth.socialaccount.providers.linkedin_oauth2',
+                              <br> 'allauth.socialaccount.providers.mailru',
+                              <br> 'allauth.socialaccount.providers.mailchimp',
+                              <br> 'allauth.socialaccount.providers.meetup',
+                              <br> 'allauth.socialaccount.providers.microsoft',
+                              <br> 'allauth.socialaccount.providers.naver',
+                              <br> 'allauth.socialaccount.providers.nextcloud',
+                              <br> 'allauth.socialaccount.providers.odnoklassniki',
+                              <br> 'allauth.socialaccount.providers.openid',
+                              <br> 'allauth.socialaccount.providers.openstreetmap',
+                              <br> 'allauth.socialaccount.providers.orcid',
+                              <br> 'allauth.socialaccount.providers.paypal',
+                              <br> 'allauth.socialaccount.providers.patreon',
+                              <br> 'allauth.socialaccount.providers.persona',
+                              <br> 'allauth.socialaccount.providers.pinterest',
+                              <br> 'allauth.socialaccount.providers.reddit',
+                              <br> 'allauth.socialaccount.providers.robinhood',
+                              <br> 'allauth.socialaccount.providers.sharefile',
+                              <br> 'allauth.socialaccount.providers.shopify',
+                              <br> 'allauth.socialaccount.providers.slack',
+                              <br> 'allauth.socialaccount.providers.soundcloud',
+                              <br> 'allauth.socialaccount.providers.spotify',
+                              <br> 'allauth.socialaccount.providers.stackexchange',
+                              <br> 'allauth.socialaccount.providers.steam',
+                              <br> 'allauth.socialaccount.providers.strava',
+                              <br> 'allauth.socialaccount.providers.stripe',
+                              <br> 'allauth.socialaccount.providers.trello',
+                              <br> 'allauth.socialaccount.providers.tumblr',
+                              <br> 'allauth.socialaccount.providers.twentythreeandme',
+                              <br> 'allauth.socialaccount.providers.twitch',
+                              <br> 'allauth.socialaccount.providers.twitter',
+                              <br> 'allauth.socialaccount.providers.untappd',
+                              <br> 'allauth.socialaccount.providers.vimeo',
+                              <br> 'allauth.socialaccount.providers.vimeo_oauth2',
+                              <br> 'allauth.socialaccount.providers.vk',
+                              <br> 'allauth.socialaccount.providers.weibo',
+                              <br> 'allauth.socialaccount.providers.weixin',
+                              <br> 'allauth.socialaccount.providers.windowslive',
+                              <br> 'allauth.socialaccount.providers.xing',
+                              <br> 'allauth.socialaccount.providers.yandex',
+                              <br> 'allauth.socialaccount.providers.ynab',
+                            </blockquote>
+                          </p>
+                          Justo abajo de la lista <b>INSTALLED_APP</b>, agregaremos la siguiente variable, con valor 1.
+                          <blockquote>
+                            SITE_ID = 1
+                          </blockquote>
+                          Ahora en al archivo <b>urls.py</b> de la raíz del proyecto, en la lista <b>urlpatterns</b> agregamos la siguiente dirección:
+                          <blockquote>
+    path('accounts/', include('allauth.urls')),
+                          </blockquote>
+                          <p>
+                            Ahora es momento de migrar los cambios 
+                            <blockquote>
+                              $ python manage.py migrate
+                            </blockquote>
+                          </p>
                         </div>
                       </div>
                     </div>
