@@ -1,9 +1,9 @@
 <span id="a">invitado@fraediaz</span>:<span id="b">~</span><span id="c">$</span> cd fraediaz.github.io/<!-- kjsdfhkjdhsfkjdshfkj -->
 <span id="a">invitado@fraediaz</span>:<span id="b">~</span><span id="c">$</span> cat <!-- kjsdfhkjdhsfkjdshfkj -->informacion.txt<br/><br/>
 
-Hola Humano! Mi nombre es Franco Díaz, soy desarrollador de software y esta es mi web.<!-- laglaglaglaglaglaglaglaglaglaglaglag --><p>Principalmente en lenguaje 🐍 Python construyo sistemas y/o procesos informáticos que dan solución a problemas empresariales.</p>
-<p>You can introduce yourself here.</p> <!-- ksjdokhdfgdufdfkjhfkjahdfkjhafkjhakf -->
-<p> You can also tell what you've worked and known and what skills you have, you can also give link to your professional portfolio here<a href="link"> portfolio</a>.</p><!-- kjdhjhgdgldjhgdwtoiewotwotjdfkjdfffsf -->
+Hola Humano! Mi nombre es Franco Díaz, soy desarrollador de software y esta es mi web.<!-- laglaglaglaglaglaglaglaglaglaglaglag --><p>Principalmente en lenguaje 🐍 Python, construyo sistemas y/o procesos informáticos que dan solución a problemas empresariales.</p>
+<p>Tengo experiencia en desarrollo BackEnd & FullStack, API's RestFull y protocolos de seguridad informática.</p> <!-- ksjdokhdfgdufdfkjhfkjahdfkjhafkjhakf -->
+<p>He creado software para mis clientes, con total autonomía, pero actualmente la empresa IBM y su spin-off Kyndryl compran mi tiempo. <p>sjdksjk</p> <a href="link"> portfolio</a>.</p><!-- kjdhjhgdgldjhgdwtoiewotwotjdfkjdfffsf -->
 <p>Tell more about yourself. <br><br><br>Give your project links or something like that. <a href="link"> Here you go</a>.</p><!-- hsdgfhjfkdjhfkjsdhfkjdshfkjsdhfkjsdhkfjhdskjfhksdjhfkdsj -->
 <p> You can give links to other professional profiles you have on Internet, here: <br> <a href="link1">Profile1</a> <br> <a href="link2">Profile2</a> and <br> <a href="link3">Profile3</a>.</p>
 
