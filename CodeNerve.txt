@@ -1,6 +1,6 @@
-<span id="a">invitado@fraediaz</span>:<span id="b">~</span><span id="c">$</span> cd WebPersonal/<!-- kjsdfhkjdhsfkjdshfkj -->Información
-<span id="a">invitado@fraediaz</span>:<span id="b">~</span><span id="c">$</span> cat <!-- kjsdfhkjdhsfkjdshfkj -->sobre_mi.txt<br/><br/>
-My favorite code quote, "<span id="k">Code for Everyone</span>". <!-- sjkfhskjf -->
+<span id="a">invitado@fraediaz</span>:<span id="b">~</span><span id="c">$</span> cd fraediaz.github.io/<!-- kjsdfhkjdhsfkjdshfkj -->
+<span id="a">invitado@fraediaz</span>:<span id="b">~</span><span id="c">$</span> cat <!-- kjsdfhkjdhsfkjdshfkj -->informacion.txt<br/><br/>
+"<span id="k">Hola humano!</span>". <!-- sjkfhskjf -->
 
 Hey There! This is the portflio website in the skin of a terminal.<!-- laglaglaglaglaglaglaglaglaglaglaglag --><p>You can see that, this is how your portfolio would look like.</p>
 <p>You can introduce yourself here.</p> <!-- ksjdokhdfgdufdfkjhfkjahdfkjhafkjhakf -->
