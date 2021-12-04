@@ -1,7 +1,8 @@
 <span id="a">invitado@fraediaz</span>:<span id="b">~</span><span id="c">$</span> cd fraediaz.github.io/<!-- kjsdfhkjdhsfkjdshfkj -->
 <span id="a">invitado@fraediaz</span>:<span id="b">~</span><span id="c">$</span> cat <!-- kjsdfhkjdhsfkjdshfkj -->informacion.txt<br/><br/>
+"<span id="k">Hola humano!</span>" <!-- sjkfhskjf -->
 
-Hola Humano! Mi nombre es Franco Díaz, soy desarrollador de software y esta es mi web.<!-- laglaglaglaglaglaglaglaglaglaglaglag --><p>Principalmente en lenguaje 🐍 Python construyo sistemas y/o procesos informáticos que dan solución a problemas empresariales.</p>
+Hey There! This is the portflio website in the skin of a terminal.<!-- laglaglaglaglaglaglaglaglaglaglaglag --><p>You can see that, this is how your portfolio would look like.</p>
 <p>You can introduce yourself here.</p> <!-- ksjdokhdfgdufdfkjhfkjahdfkjhafkjhakf -->
 <p> You can also tell what you've worked and known and what skills you have, you can also give link to your professional portfolio here<a href="link"> portfolio</a>.</p><!-- kjdhjhgdgldjhgdwtoiewotwotjdfkjdfffsf -->
 <p>Tell more about yourself. <br><br><br>Give your project links or something like that. <a href="link"> Here you go</a>.</p><!-- hsdgfhjfkdjhfkjsdhfkjdshfkjsdhfkjsdhkfjhdskjfhksdjhfkdsj -->
