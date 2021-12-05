@@ -2,12 +2,16 @@
 <span id="a">invitado@fraediaz</span>:<span id="b">~</span><span id="c">$</span> cat <!-- kjsdfhkjdhsfkjdshfkj -->informacion.txt<br/><br/>
 
 Hola Humano! Mi nombre es <strong>Franco Díaz S.-</strong> <br>Soy desarrollador de software y estás en mi web. <br><!-- laglaglaglaglaglaglaglaglaglaglaglag -->
-Principalmente en lenguaje Python 🐍 y su framework Django<br>Construyo sistemas y/o procesos informáticos que dan solución a problemas empresariales.
+Principalmente en lenguaje Python 🐍 y su framework Django;<br>construyo sistemas y/o procesos informáticos que dan solución a problemas empresariales.
 <p>Tengo experiencia en desarrollo BackEnd & FullStack, API's RestFull y protocolos de seguridad informática.</p> <!-- ksjdokhdfgdufdfkjhfkjahdfkjhafkjhakf -->
-<p>He creado software para mis clientes con total autonomía<br> <strong>IBM</strong> y su spin-off <strong>Kyndryl</strong> compran mi tiempo y algoritmos. <a href="link"> portfolio</a>.</p><!-- kjdhjhgdgldjhgdwtoiewotwotjdfkjdfffsf -->
+<p>He creado software para mis clientes con total autonomía, <br>pero actualmente <strong>IBM Chile</strong> y su spin-off <strong>Kyndryl</strong> compran mi tiempo y algoritmos. <br>
+Me vuela la cabeza pensar en BigData y el impacto de la IA en la historia de la humanidad. <br>
+Algunas de las tecnologías con las que trabajo son: AWS, GCP, GitHub, PostgreSQL, Azure y muchas otras <br>
+<br>
+<a href="https://www.linkedin.com/in/fraediaz/">LinkedIn</a>. <br>
+<a href="https://github.com/fraediaz/">Proyectos</a> <br>
+<a href="mailto:fraediaz@icloud.com">Correo</a> <br>
+</p>
 
+<p>Saludos!</p>
 
-<p>Cheers!</p>
-
-
-<strong></strong>
