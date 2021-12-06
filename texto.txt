@@ -1,7 +1,7 @@
 <span id="a">invitado@fraediaz</span>:<span id="b">~</span><span id="c">$</span> cd fraediaz.github.io/<!-- kjsdfhkjdhsfkjdshfkj -->
 <span id="a">invitado@fraediaz</span>:<span id="b">~</span><span id="c">$</span> cat <!-- kjsdfhkjdhsfkjdshfkj -->informacion.txt<br/><br/>
 
-Hola Humano! 👋<br>Mi nombre es <strong>Franco Díaz S.-</strong> Soy desarrollador de software y estás en mi web. <br><!-- laglaglaglaglaglaglaglaglaglaglaglag -->
+Hola Humano! 👋<br>Mi nombre es <strong>Franco Díaz</strong>, soy ingeniero de software y estás en mi web. <br><!-- laglaglaglaglaglaglaglaglaglaglaglag -->
 Principalmente en lenguaje Python 🐍 y su framework Django;<br>construyo sistemas y/o procesos informáticos que dan solución a problemas empresariales. <br>
 Tengo experiencia en desarrollo BackEnd & FullStack, API's RestFull y protocolos de seguridad informática. <br> <!-- ksjdokhdfgdufdfkjhfkjahdfkjhafkjhakf -->
 He creado software para mis clientes con total autonomía, pero actualmente <strong>IBM Chile</strong> y su spin-off <strong>Kyndryl</strong> compran mi tiempo y algoritmos. <br>
