@@ -1376,14 +1376,14 @@ h1, h2, h3, h4, h5,
     transform: translateX(0%); }
 
 .testimonial {
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto !important;
   text-align: center; }
   .testimonial blockquote {
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-style: italic; }
   .testimonial figure img {
-    max-width: 100px;
+    max-width: 150px;
     margin: 0 auto;
     border-radius: 50%; }
 
