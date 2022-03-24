@@ -9,8 +9,8 @@ Me vuela la cabeza pensar en BigData y el impacto de la IA en la historia de la 
 Algunas de las tecnologías con las que trabajo son: AWS, GCP, GitHub, PostgreSQL, Azure y muchas otras <br>
 
 <a href="mailto:fraediaz@icloud.com">Escríbeme</a>
-<a href="https://www.linkedin.com/in/fraediaz/">LinkedIn</a><
-><a href="https://github.com/fraediaz/">GitHub</a>
-<a href="/web">Web con imágenes</a>
+<a href="https://www.linkedin.com/in/fraediaz/">LinkedIn</a>
+<a href="https://github.com/fraediaz/">GitHub</a>
+<a href="/web">Web con imágenes 👈</a>
 Saludos !
 
