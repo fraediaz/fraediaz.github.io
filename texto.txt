@@ -7,9 +7,8 @@ Principalmente en lenguaje Python 🐍 y su framework Django;<br>construyo siste
 Tengo experiencia en desarrollo BackEnd & FullStack, API's RestFull y protocolos de seguridad informática. <br> <!-- ksjdokhdfgdufdfkjhfkjahdfkjhafkjhakf -->
 Me vuela la cabeza pensar en BigData y el impacto de la IA en la historia de la humanidad. <br>
 Algunas de las tecnologías con las que trabajo son: AWS, GCP, GitHub, PostgreSQL, Azure y muchas otras <br>
-<br>
+
 <a href="mailto:fraediaz@icloud.com">Escríbeme</a>
-<br>
 <a href="https://www.linkedin.com/in/fraediaz/">LinkedIn</a><br><a href="https://github.com/fraediaz/">Proyectos</a> <br>
 Saludos !
 
