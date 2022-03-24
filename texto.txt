@@ -5,9 +5,11 @@
 <br>Mi nombre es <strong>Franco Díaz</strong>, soy ingeniero de software y estás en mi web. <br><!-- laglaglaglaglaglaglaglaglaglaglaglag -->
 Principalmente en lenguaje Python 🐍 y su framework Django;<br>construyo sistemas y/o procesos informáticos que dan solución a problemas empresariales. <br>
 Tengo experiencia en desarrollo BackEnd & FullStack, API's RestFull y protocolos de seguridad informática. <br> <!-- ksjdokhdfgdufdfkjhfkjahdfkjhafkjhakf -->
-He creado software para mis clientes con total autonomía, pero actualmente <strong>IBM Chile</strong> y su spin-off <strong>Kyndryl</strong> compran mi tiempo y algoritmos. <br>
 Me vuela la cabeza pensar en BigData y el impacto de la IA en la historia de la humanidad. <br>
 Algunas de las tecnologías con las que trabajo son: AWS, GCP, GitHub, PostgreSQL, Azure y muchas otras <br>
-<a href="https://www.linkedin.com/in/fraediaz/">LinkedIn</a><br><a href="https://github.com/fraediaz/">Proyectos</a> <br><a href="mailto:fraediaz@icloud.com">Correo</a> <br>
+<br>
+<a href="mailto:fraediaz@icloud.com">Escríbeme</a>
+<br>
+<a href="https://www.linkedin.com/in/fraediaz/">LinkedIn</a><br><a href="https://github.com/fraediaz/">Proyectos</a> <br>
 Saludos !
 
