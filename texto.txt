@@ -11,6 +11,6 @@ Algunas de las tecnologías con las que trabajo son: AWS, GCP, GitHub, PostgreSQ
 <a href="mailto:fraediaz@icloud.com">Escríbeme</a>
 <a href="https://www.linkedin.com/in/fraediaz/">LinkedIn</a><
 ><a href="https://github.com/fraediaz/">GitHub</a>
-<a href=/web">Web con imágenes</a>
+<a href="/web">Web con imágenes</a>
 Saludos !
 
