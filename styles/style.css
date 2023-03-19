@@ -1,0 +1,674 @@
+/* Fonts */
+
+@font-face { /* JetBrains */
+  font-display: swap;
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../fonts/jetbrains-mono-v13-latin-regular.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/jetbrains-mono-v13-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/jetbrains-mono-v13-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/jetbrains-mono-v13-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/jetbrains-mono-v13-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/jetbrains-mono-v13-latin-regular.svg#JetBrainsMono') format('svg'); /* Legacy iOS */
+}
+
+@font-face { /* Pixel NES */
+  font-display: swap;
+  font-family: 'Pixel NES';
+  font-weight: normal;
+  font-style: normal;
+  src: url('../fonts/Pixel_NES.eot?') format('eot'),
+       url('../fonts/Pixel_NES.woff') format('woff'),
+       url('../fonts/Pixel_NES.ttf') format('truetype'),
+       url('../fonts/Pixel_NES.svg#PixelNES') format('svg');
+}
+
+/* Theming and Structure */
+
+html[data-theme='light'] {
+  --background: #e0e5f1;
+  --nav-background: #e0e5f1a4;
+  --portfolio-overlay: #6b98c9b6;
+  --body: #1B1B26;
+  --faded: #9fa6b6;
+  --primary: #6b98c9;
+  --secondary: #C69232;
+}
+
+html[data-theme='dark'] {
+  --background: #1B1B26;
+  --nav-background: #1b1b26ad;
+  --portfolio-overlay: #1B1B26b6;
+  --body: #e0e5f1;
+  --faded: #4f4f6b;
+  --primary: #AA9FFF;
+  --secondary: #F5D324;
+}
+
+.primary {
+  color: var(--primary);
+}
+
+.secondary {
+  color: var(--secondary);
+}
+
+body {
+  font-family: 'JetBrains Mono', sans-serif;
+  font-size: 1em;
+  letter-spacing: -0.5px;
+  color: var(--body);
+  background-color: var(--background);
+  text-align: left;
+  text-rendering: optimizeSpeed;
+  line-height: 1.3;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+}
+
+#site-wrapper {
+  display: flex;
+  min-height: 100vh; /* container always  */
+  flex-direction: column; /* containers flex vertically */
+  justify-content: center; /* centered vertically */
+  pointer-events: auto;
+  position: relative;
+  z-index: 1;
+}
+
+.entry-points {
+  list-style-type: none;
+  display:block;
+  padding-left: 1em;
+}
+
+.entry-points li + li { /* Apply start margin between <li> */
+  margin-block-start: 0.7em;
+}
+
+.entry-points li::marker {
+  color: var(--faded);
+  content: '· ';
+}
+
+/* Typography */
+
+#intro {
+  text-align: left;
+}
+
+#intro em {
+  font-style: normal;
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.comment {
+  color: var(--faded);
+  display: block;
+  padding-bottom: 0.2em;
+  font-size: 1em;
+  font-style: italic;
+}
+
+.p-title {
+  padding-bottom: 0.5em;
+  color: var(--primary);
+}
+
+.p-subtitle {
+  color: var(--secondary);
+}
+
+a {
+  color: var(--primary);
+  /* text-decoration: none; */
+}
+
+a:hover {
+  opacity: 0.5;
+}
+
+/* Typography Before/After Embellishments */
+
+.comment::before {
+  content: '// ';
+  color: var(--faded);
+}
+
+.p-title::after {
+  content: ' = ';
+  color: var(--faded);
+}
+
+.p-subtitle::after {
+  content: '() {';
+  color: var(--faded);
+}
+
+.section-entry::after {
+  content: '}';
+  color: var(--faded);
+  display: block;
+}
+
+/* Headings and Titles */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Pixel NES', sans-serif;
+  font-weight: 100;
+  margin: 0;
+  line-height:1;
+}
+
+h2, h3, h4, h5, h6 {
+  font-size:1.4em;
+}
+
+.visually-hidden { /* For H1 SEO */
+  border: 0;
+  padding: 0;
+  margin: 0;
+  position: absolute !important;
+  height: 1px; 
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 - a 0 height clip, off to the bottom right of the visible 1px box */
+  clip: rect(1px, 1px, 1px, 1px); /* support legacy browsers */
+  clip-path: inset(50%); /*modern browsers, clip-path works inwards from each corner*/
+  white-space: nowrap; /* added line to stop words getting smushed together (as they go onto seperate lines and some screen readers do not understand line feeds as a space */
+}
+
+h1 {
+  line-height: 1;
+  overflow: visible;
+}
+
+#tom-dawson, #front-end-developer {
+  width: 100%;
+}
+
+#tom-dawson { /* Size of title container */
+  height:40px;
+}
+
+#front-end-developer { /* Size of title container */
+  height: 40px;
+  letter-spacing: 2px;
+}
+
+#tom-dawson text { /* Positioning text inside container */
+  font-size: 1.44em;
+  transform: translateY(40px);
+}
+
+#front-end-developer text {
+  font-size: 0.71em;
+  transform: translateY(30px);
+}
+
+/* Page Structure */
+
+.container {
+  padding: 0;
+  width: clamp(0px, 95vw, 680px); /* always shrinks, prefers 95vw, max 680px */
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+
+.indented {
+  margin: 0px 10px;
+}
+
+.indented > * + * { /* Add margin in between child elements */
+  margin-block-end: 1.5em;
+}
+
+.indented > :last-child { /* Add margin to last child element */
+  margin-block-end: 3em;
+}
+
+.indented > :nth-child(2) { /* Add margin below headings */
+  margin-block-start: 1em;
+}
+
+/* Flexbox || Competencies */
+
+/* Skill Boxes */
+
+.flex-key {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: baseline;
+  margin-block-end: 0em;
+}
+
+.flex-key *::before {
+  content: " ⬤ ";
+  font-size: 1em;
+}
+
+.flex-key :not(:last-child) {
+  padding-right: 20px;
+}
+
+.skill-key.developer {
+  color: var(--primary);
+}
+
+.skill-key.it {
+  color: var(--secondary);
+}
+
+.programming-skill {
+  background-color: var(--primary);
+  color: var(--background);
+}
+
+.it-skill {
+  background-color: var(--secondary);
+  color: var(--background);
+}
+
+.flex-container {
+  padding: 0;
+  margin: 10px 0px 0px -5px;
+  padding-inline-start: 0px;
+  width: calc(100% + 10px);
+  /* Flex */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: stretch;
+}
+
+.flex-container > * {
+  list-style-type: none;
+  padding: 7px 10px;
+  margin: 5px;
+  /* Flex */
+  display:flex;
+  text-align: center;
+  align-self: stretch;
+  align-items: center;
+  justify-content: center;
+  /* These make the tiles stretch */
+  flex-grow: 1;
+  width: auto;
+}
+
+/* Header styles */
+
+header {
+  display: flex;
+  position: relative;
+  z-index: 3;
+}
+
+header.container {
+  padding-top:30px;
+}
+
+#portrait {
+  max-height: 220px;
+  position: absolute;
+  right: 0px;
+  bottom: 25px;
+  overflow-clip-margin: initial;   /* This stops face img from causing shift in nav when scrolling on mobile */
+}
+
+nav /* #navbar */ {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  position: sticky;
+  top: -1px; /* -1px is important for JS to apply .sticky class to nav */
+  z-index: 2;
+  padding: 15px 0px 15px 0px;
+  border-bottom: dashed 2px var(--primary); /* Perf. line border */
+  margin-bottom: 2em;
+  gap: 10px;
+  backdrop-filter: blur(5px);
+  background-color: var(--nav-background);
+}
+
+/* Header Links */
+
+.break {
+  display: none;
+}
+
+.email-address {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 5px;
+}
+
+.social-icon, .toggle-icon {
+  width: 25px;
+}
+
+.social-icon-container {
+  vertical-align: middle;
+  display: inline-flex;
+  align-items: center;
+}
+
+/* Header + Footer Sticking */
+
+
+
+/* Footer */
+
+footer p { /* Normalize default styles */
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+
+#footer-global {
+  font-family: 'Pixel NES', sans-serif;
+  font-size: 0.9rem;
+  letter-spacing: 0.3px;
+  padding: 5px 0px 5px 0px;
+  border-top: dashed 2px var(--primary); /* Perf. line border */
+  /* position: sticky;
+  bottom: -1px; /* -1px is important for JS to apply .sticky class to nav */
+}
+
+.obviously {
+  color: var(--faded);
+  font-size: 0.5rem;
+  font-style: italic;
+  font-weight: 100;
+}
+
+/* Selection/Highlighting */
+
+.social-icon::selection, svg text::selection, #portrait::selection, #theme-toggle span::selection {
+  background: none; /* Remove selection highlight */
+}
+
+::selection {
+  background: var(--body);
+  color: var(--background);
+  text-shadow: none;
+}
+
+::-moz-selection {
+  background: var(--body);
+  color: var(--background);
+  text-shadow: none;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar { 
+  width: 6px;
+  background: transparent; /* Background */
+}
+
+::-webkit-scrollbar-thumb { 
+  background: var(--primary); /* Foreground */
+  transition: all 0.3s; 
+}
+
+/* Button styling */
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+    overflow: visible;
+    font-family: 'Pixel NES', sans-serif;
+    font-size: 1em;
+    line-height: 1.15;
+    margin: 0;
+    text-transform: none;
+    appearance: button;
+    -webkit-appearance: button;
+    border-width:0px;
+}
+
+/* Theme Toggle */
+
+.button {
+  cursor: pointer;
+  display: block;
+  padding: 7px 5px;
+  color: var(--background);
+  background-color: var(--primary);
+  border-radius: 10px;
+  min-width: 80px;
+}
+
+.button:active {
+  transform: translateY(2px);
+  transition-duration: 0.1s;
+}
+
+/* Animations */
+
+/* scripts.js removes this class on page load */
+
+.preload * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Transitions */
+
+nav,
+hr,
+img,
+a,
+.container,
+.programming-skill,
+.it-skill,
+.portfolio-image-wrapper,
+.portfolio-image-wrapper:before,
+.portfolio-overlay,
+.button,
+#tom-dawson,
+#front-end-developer,
+.p-subtitle,
+.p-subtitle::before,
+.p-title {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+body {
+  transition: background 0.3s;
+}
+
+.flex-container > *:hover {
+  transform: translateY(-3px);
+  transition-duration: 0.05s;
+}
+
+/* Heading Animation */
+
+#tom-dawson { /* SVG element */
+  animation: stroke 1.5s;
+  fill: var(--primary);
+  stroke: var(--primary);
+  stroke-width: 0.5px;
+}
+
+#front-end-developer {
+  animation: stroke 2s;
+  fill: var(--secondary);
+  stroke: var(--secondary);
+  stroke-width: 0.5px;
+}
+
+.sticky #portrait {
+  -moz-transform: rotate(-20deg) translateY(50px);
+  -webkit-transform: rotate(-20deg) translateY(50px);
+  -o-transform: rotate(-20deg) translateY(50px);
+  -ms-transform: rotate(-20deg) translateY(50px);
+  transform: rotate(-20deg) translateY(50px);
+}
+
+@keyframes stroke {
+  0% {
+    fill: transparent;
+    stroke-dashoffset: 25%;
+    stroke-dasharray: 0 50%; /* No stroke whatsoever */
+    stroke-width: 0.5;
+  }
+  70% {
+    fill: transparent;
+    stroke-width: 0.5;
+  }
+  100% {
+    stroke-dashoffset: -25%;
+    stroke-dasharray: 50% 0; /* Unbroken stroke */
+    stroke-width: 0.5;
+  }
+}
+
+/* Portfolio */
+
+.portfolio-entry {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*
+.portfolio-entry::after {
+  content: '';
+  width: 100%;
+  display: block;
+  border-bottom: 2px dashed var(--primary);
+  margin-block: 1em;
+}
+*/
+
+.portfolio-image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Padding and Margin below fixes blurring glitch on hover animation */
+  padding: 1px;
+  margin: -1px;
+  margin-block-end: 0.5em;
+}
+
+.portfolio-image-wrapper:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(2px);
+  background-color: var(--portfolio-overlay);
+}
+
+.portfolio-image-wrapper:hover .portfolio-overlay {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.portfolio-image-wrapper:hover:before {
+  backdrop-filter: none;
+  background-color: unset;
+}
+
+.portfolio-overlay {
+  font-family: 'Pixel NES';
+  font-size: 1.4em;
+  color: var(--body);
+  text-shadow: 1px 1px 1px #3b3b3b, -1px -1px 1px #3b3b3b, 1px -1px 1px #3b3b3b, -1px 1px px #1B1B26;
+  margin: 0;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  gap: 0.75em;
+}
+
+
+/* Mobile breakpoint */
+
+@media only screen and (max-width: 480px) {
+  #tom-dawson text {
+    font-size:1.15em; 
+  }
+  
+  #front-end-developer text {
+    font-size: 0.55em;
+  }
+
+  .break {
+    display: flex;
+    margin-bottom: -5px;
+    flex-basis: 100%;
+    flex-grow: 1;
+    gap: 0;
+  }
+
+  .email-address {
+    padding-top: 0px;
+  }
+
+  .p-subtitle {
+    display: block;
+    padding-top: 5px;
+  }
+
+  #portrait, .sticky #portrait {
+    max-height: 90px;
+    right: 0px;
+    bottom: -15px;
+    /*
+    -moz-transform: none;
+    -webkit-transform: none;
+    -o-transform: none;
+    -ms-transform: none;
+    transform: none;
+    */
+    -moz-transform: rotate(-20deg) translateY(50px);
+    -webkit-transform: rotate(-20deg) translateY(50px);
+    -o-transform: rotate(-20deg) translateY(50px);
+    -ms-transform: rotate(-20deg) translateY(50px);
+    transform: rotate(-20deg) translateY(50px);
+  }
+
+  header.container {
+    padding-top: 10px;
+  }
+
+  .toggle-button:hover {
+    opacity: 1;
+  }
+
+/* ^ Mobile Styles ^ */
+}
