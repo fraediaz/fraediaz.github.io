@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contacto | Catalina Reyes Neira - Relaciones Públicas</title>
+<meta name="description" content="Contacta a Catalina Reyes Neira.">
+<style>
+*, :before, :after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --bg: #ffffff; --bg-muted: #f8fafc; --fg: #0f172a; --fg-muted: #64748b;
+  --border: #e2e8f0; --primary: #0f172a; --primary-fg: #ffffff;
+  --font-sans: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --radius: 0.5rem;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0f172a; --bg-muted: #1e293b; --fg: #f1f5f9; --fg-muted: #94a3b8;
+    --border: #1e293b; --primary: #f1f5f9; --primary-fg: #0f172a;
+  }
+}
+html { scroll-behavior: smooth; }
+body { font-family: var(--font-sans); background: var(--bg); color: var(--fg); line-height: 1.6; }
+.container { max-width: 48rem; margin: 0 auto; padding: 0 1.5rem; }
+a { color: inherit; text-decoration: none; }
+
+nav {
+  position: sticky; top: 0; z-index: 50; background: var(--bg); border-bottom: 1px solid var(--border);
+}
+nav .container { display: flex; align-items: center; justify-content: space-between; height: 4rem; max-width: 80rem; }
+nav .logo { font-weight: 700; font-size: 1.125rem; }
+nav .nav-links { display: flex; gap: 0.5rem; }
+nav .nav-links a { padding: 0.5rem 0.75rem; border-radius: var(--radius); font-size: 0.875rem; font-weight: 500; transition: background 0.2s; }
+nav .nav-links a:hover { background: var(--bg-muted); }
+
+.page-header { padding: 6rem 1.5rem 2rem; text-align: center; }
+.page-header h1 { font-size: clamp(2rem, 5vw, 3.75rem); font-weight: 700; }
+.page-header p { color: var(--fg-muted); margin-top: 0.5rem; font-size: 1.125rem; }
+
+.contact-section { padding: 2rem 1.5rem 4rem; }
+.contact-card {
+  border: 1px solid var(--border); border-radius: var(--radius);
+  padding: 2rem; text-align: center;
+}
+.contact-card .icon { width: 3rem; height: 3rem; margin: 0 auto 1rem; }
+.contact-card h3 { font-size: 1.25rem; font-weight: 600; margin-bottom: 0.5rem; }
+.contact-card p { color: var(--fg-muted); margin-bottom: 0.25rem; }
+.contact-card a { color: var(--fg); font-weight: 500; }
+.contact-card a:hover { text-decoration: underline; }
+
+.contact-grid {
+  display: grid; gap: 1.5rem; margin-top: 2rem;
+}
+@media (min-width: 640px) { .contact-grid { grid-template-columns: repeat(2, 1fr); } }
+
+footer {
+  border-top: 1px solid var(--border); padding: 2.5rem 1.5rem;
+  text-align: center; color: var(--fg-muted); font-size: 0.875rem;
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="container">
+    <a href="../index.html" class="logo">Catalina Reyes</a>
+    <div class="nav-links">
+      <a href="../index.html">Inicio</a>
+      <a href="../projects/index.html">Proyectos</a>
+      <a href="../experience/index.html">Trayectoria</a>
+      <a href="../skills/index.html">Habilidades</a>
+      <a href="index.html">Contacto</a>
+    </div>
+  </div>
+</nav>
+
+<div class="page-header">
+  <h1>Contacto</h1>
+  <p>Ponte en contacto conmigo.</p>
+</div>
+
+<div class="container contact-section">
+  <div class="contact-grid">
+    <div class="contact-card">
+      <svg class="icon" stroke="currentColor" fill="currentColor" viewBox="0 0 24 24"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg>
+      <h3>Email</h3>
+      <p><a href="mailto:catareyesneira@gmail.com">catareyesneira@gmail.com</a></p>
+    </div>
+    <div class="contact-card">
+      <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      <h3>Teléfono</h3>
+      <p><a href="tel:+56933329123">+569 333 29 123</a></p>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="container">
+    <p>&copy; 2026 Catalina Reyes Neira</p>
+  </div>
+</footer>
+
+</body>
+</html>
