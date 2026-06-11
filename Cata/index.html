@@ -1,396 +1,1068 @@
 <!DOCTYPE html>
-<html lang="es">
+<!--[if IE 8 ]><html class="no-js oldie ie8" lang="es"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="es"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="es"> <!--<![endif]-->
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Catalina Reyes Neira - Relaciones Públicas</title>
-<meta name="description" content="Catalina Reyes Neira - Relacionadora Pública con mención en Marketing, especializada en comunicación estratégica y gestión cultural.">
-<meta name="author" content="Catalina Reyes Neira">
-<meta name="keywords" content="Catalina Reyes Neira,Relaciones Públicas,Marketing,Comunicación Estratégica,Gestión Cultural,Portafolio,Chile,Comunicaciones,Producción de Eventos,Community Management">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-<style>
-*,:before,:after{box-sizing:border-box;margin:0;padding:0;border:0 solid}
-:root{
---background:60 56% 83%;--foreground:186 65% 40%;--muted:147 56% 67%;--muted-foreground:186 65% 30%;--popover:60 56% 83%;--popover-foreground:186 65% 40%;--border:147 40% 75%;--input:147 40% 75%;--card:60 56% 83%;--card-foreground:186 65% 40%;--primary:186 65% 40%;--primary-foreground:60 56% 83%;--secondary:147 56% 67%;--secondary-foreground:186 65% 30%;--accent:41 74% 55%;--accent-foreground:60 56% 83%;--destructive:0 70% 50%;--destructive-foreground:60 56% 83%;--ring:147 40% 75%;--radius:.5rem;
-  --font-sans:'Inter',ui-sans-serif,system-ui,sans-serif;
-  --font-heading:'Inter',ui-sans-serif,system-ui,sans-serif;
-}
-.dark{
---background:186 65% 12%;--foreground:60 56% 83%;--muted:186 65% 22%;--muted-foreground:60 56% 83%;--accent:41 74% 55%;--accent-foreground:186 65% 12%;--popover:186 65% 12%;--popover-foreground:60 56% 83%;--border:186 40% 25%;--input:186 40% 25%;--card:186 65% 15%;--card-foreground:60 56% 83%;--primary:147 56% 67%;--primary-foreground:186 65% 12%;--secondary:186 65% 22%;--secondary-foreground:60 56% 83%;--destructive:0 70% 40%;--destructive-foreground:60 56% 83%;--ring:147 56% 67%;
-}
 
-html{scroll-behavior:smooth}
-body{
-  font-family:var(--font-sans);
-  background:hsl(var(--background));
-  color:hsl(var(--foreground));
-  line-height:1.6;min-height:100vh;
-}
-.container{max-width:64rem;margin:0 auto;padding:0 1.5rem}
-.container-wide{max-width:80rem;margin:0 auto;padding:0 1.5rem}
-a{color:inherit;text-decoration:none}
-img{max-width:100%;height:auto}
+   <meta charset="utf-8">
+	<title>Catalina Reyes Neira - Relaciones Públicas</title>
+	<meta name="description" content="Relacionadora Pública con mención en Marketing, especializada en comunicación estratégica y gestión cultural. Explora mis proyectos, trayectoria y habilidades en comunicación y cultura.">
+	<meta name="author" content="Catalina Reyes Neira">
 
-/* Nav */
-nav{position:sticky;top:0;z-index:50;background:hsl(var(--background));border-bottom:1px solid hsl(var(--border))}
-nav .container-wide{display:flex;align-items:center;justify-content:space-between;height:4rem}
-nav .logo{font-weight:700;font-size:1.125rem}
-nav .nav-links{display:flex;gap:.5rem}
-nav .nav-links a{padding:.5rem .75rem;border-radius:var(--radius);font-size:.875rem;font-weight:500;transition:background .2s}
-nav .nav-links a:hover{background:hsl(var(--muted))}
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-/* Particles */
-#particles-canvas{
-  position:fixed;top:0;left:0;width:100%;height:100%;z-index:0;pointer-events:none;
-}
+   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="css/base.css">
+   <link rel="stylesheet" href="css/main.css">
+   <link rel="stylesheet" href="css/vendor.css">
+   <style>
+      body { font-family: 'EB Garamond', 'lora-regular', serif !important; }
+      h1, h2, h3, h4, h5, h6,
+      .main-navigation a, .logo a,
+      .intro-position span,
+      .button, .submitform,
+      .folio-title, .folio-types,
+      .service-content h3,
+      .stat-title, .stat-count,
+      .resume-header h2,
+      .timeline-header h3,
+      .timeline-header p,
+      .info-list strong,
+      .section-intro h5,
+      .section-intro h1 { font-family: 'Playfair Display', 'poppins-bold', serif !important; }
+      #intro {
+         background: #0a0a0a !important;
+         background-image: none !important;
+         min-height: 100vh;
+         height: auto !important;
+         display: flex !important;
+         flex-direction: column;
+         justify-content: center;
+      }
+      #intro .intro-overlay { display: none; }
+      #intro .intro-content { display: block; transform: none !important; position: relative; z-index: 2; }
+      #intro .intro-social { z-index: 2; }
+      #intro .row { width: 100%; }
+      #particles-canvas {
+         position: absolute;
+         top: 0; left: 0;
+         width: 100%; height: 100%;
+         display: block;
+         pointer-events: none;
+         z-index: 1;
+      }
+      .intro-content h5 { display: none; }
+      .intro-content h1 { font-size: 5.6rem; letter-spacing: .05rem; margin-bottom: 1.2rem; }
+      .intro-content .intro-position span::after,
+      .intro-content .intro-position span:first-child::before { display: none; }
+      .intro-content .intro-position span { padding: 0 1.5rem; }
+      button, .button, .button.button-primary, .button.stroke, #go-top a {
+         border-radius: 30px !important;
+      }
+      #portfolio { background: #f8f6f3 !important; }
+      #portfolio .folio-item { padding: 8px; border-radius: 16px; }
+      #portfolio .folio-item .item-wrap {
+         border-radius: 12px; overflow: hidden;
+         box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+         transition: box-shadow 0.4s ease;
+      }
+      #portfolio .folio-item:hover .item-wrap {
+         box-shadow: 0 12px 40px rgba(0,0,0,0.12);
+      }
+      #portfolio .folio-item img { border-radius: 12px; }
+      #portfolio .folio-item:hover img {
+         transform: scale(1.08) !important;
+      }
+      #portfolio .overlay {
+         background: linear-gradient(135deg, rgba(204,0,95,0.85), rgba(10,10,10,0.7)) !important;
+         opacity: 0;
+         transition: opacity 0.4s ease !important;
+      }
+      #portfolio .folio-item:hover .overlay {
+         opacity: 1 !important;
+         background: linear-gradient(135deg, rgba(204,0,95,0.85), rgba(10,10,10,0.7)) !important;
+      }
+      #portfolio .folio-item-cell { left: 0 !important; opacity: 0; transform: translateY(20px); transition: all 0.4s ease !important; }
+      #portfolio .folio-item:hover .folio-item-cell { opacity: 1 !important; transform: translateY(0); }
+      #portfolio .folio-title { font-size: 2.8rem; letter-spacing: 0; text-shadow: 0 2px 10px rgba(0,0,0,0.3); }
+      #portfolio .folio-types { letter-spacing: .15rem; font-size: 1.1rem; }
+      .popup-modal { border-radius: 16px; overflow: hidden; box-shadow: 0 20px 60px rgba(0,0,0,0.3); }
+      .popup-modal .description-box { padding: 3rem 3.5rem; }
+      .popup-modal .description-box h4 { color: #cc005f; font-size: 2.4rem; margin-bottom: 1.2rem; }
+      .popup-modal .description-box p { font-size: 1.5rem; line-height: 1.8; color: #444; }
+      .popup-modal .link-box { padding: 1.5rem 3.5rem; background: #f8f6f3; }
+      .popup-modal .link-box a { font-family: 'Playfair Display', serif; font-size: 1.4rem; letter-spacing: .05rem; }
+      @media only screen and (max-width:768px) {
+         .intro-content h1 { font-size: 3.8rem; }
+      }
+   </style>
 
-/* Hero */
-.hero{
-  min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;
-  position:relative;z-index:1;padding:6rem 1.5rem;
-}
-.hero-inner{display:flex;flex-direction:column;align-items:center;gap:1.5rem;margin-top:-5rem;position:relative;z-index:2}
-.hero img{
-  width:60%;max-width:16rem;border-radius:9999px;
-  border:8px solid hsl(var(--primary));margin-bottom:.5rem;
-}
-.hero h1{
-  font-family:var(--font-heading);
-  font-size:clamp(1.875rem,5vw,4.5rem);font-weight:700;line-height:1.1;
-  color:hsl(var(--foreground));
-}
-.hero h3{
-  font-family:var(--font-heading);
-  font-size:clamp(1rem,2.5vw,1.5rem);
-  color:hsl(var(--muted-foreground));font-weight:500;
-}
-.hero p{max-width:42rem;color:hsl(var(--muted-foreground));font-size:1.125rem}
-.hero-actions{display:flex;gap:1rem;flex-wrap:wrap;justify-content:center}
+	<script src="js/modernizr.js"></script>
+	<script src="js/pace.min.js"></script>
 
-.btn{
-  display:inline-flex;align-items:center;justify-content:center;gap:.5rem;
-  padding:.75rem 1.5rem;border-radius:var(--radius);
-  font-size:.875rem;font-weight:500;transition:all .2s;cursor:pointer;border:none;
-}
-.btn-primary{background:hsl(var(--primary));color:hsl(var(--primary-foreground))}
-.btn-primary:hover{opacity:.9}
-.btn-outline{border:1px solid hsl(var(--border));background:transparent;color:hsl(var(--foreground))}
-.btn-outline:hover{background:hsl(var(--muted))}
+	<link rel="icon" type="image/png" href="favicon.png">
 
-.contact-links{display:flex;gap:1rem;align-items:center;flex-wrap:wrap;justify-content:center;margin-top:.5rem}
-.contact-links a{
-  display:inline-flex;align-items:center;gap:.375rem;
-  color:hsl(var(--muted-foreground));font-size:.875rem;transition:color .2s
-}
-.contact-links a:hover{color:hsl(var(--foreground))}
-.contact-links svg{width:1rem;height:1rem}
-
-.chevron-down{margin-top:2.5rem;animation:bounce 2s infinite}
-@keyframes bounce{0%,to{transform:translateY(0)}50%{transform:translateY(8px)}}
-
-/* Sections */
-section{padding:4rem 1.5rem;position:relative;z-index:1}
-section.muted{background:hsl(var(--muted))}
-section h2{
-  font-family:var(--font-heading);
-  font-size:clamp(1.875rem,4vw,3.75rem);font-weight:700;line-height:1.1;
-  text-align:center;margin-bottom:1rem;color:hsl(var(--foreground));
-}
-section .subtitle{text-align:center;color:hsl(var(--muted-foreground));font-size:1.125rem;margin-bottom:3rem}
-.section-content{max-width:48rem;margin:0 auto}
-.section-content p{margin-bottom:1rem;color:hsl(var(--muted-foreground))}
-
-/* Projects */
-.projects-grid{display:grid;grid-template-columns:1fr;gap:1rem}
-@media(min-width:640px){.projects-grid{grid-template-columns:repeat(2,1fr)}}
-@media(min-width:1024px){.projects-grid{grid-template-columns:repeat(3,1fr)}}
-
-.card{
-  border:1px solid hsl(var(--border));border-radius:var(--radius);
-  background:hsl(var(--card));overflow:hidden;display:flex;flex-direction:column;height:100%;
-}
-.card-img{width:100%;height:200px;object-fit:cover;border-bottom:1px solid hsl(var(--border))}
-.card-body{padding:1.25rem;flex:1;display:flex;flex-direction:column}
-.card-body h5{font-size:1.25rem;font-weight:700;margin-bottom:.5rem;color:hsl(var(--card-foreground))}
-.card-body p{color:hsl(var(--muted-foreground));font-size:.9rem;flex:1;margin-bottom:1rem}
-.card-tags{display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:1rem}
-.tag{
-  display:inline-block;padding:.25rem .75rem;border-radius:var(--radius);
-  font-size:.75rem;font-weight:700;color:hsl(var(--foreground));
-  border:1px solid hsl(var(--border));background:hsl(var(--background));
-}
-.card .btn{margin-top:auto;align-self:flex-start}
-.text-center{text-align:center}
-.mt-4{margin-top:2rem}
-
-/* Experience */
-.exp-grid{display:grid;gap:1rem}
-@media(min-width:1024px){.exp-grid{grid-template-columns:repeat(3,1fr)}}
-.exp-card{
-  border:1px solid hsl(var(--border));border-radius:var(--radius);
-  background:hsl(var(--card));padding:1.5rem;
-}
-.exp-card h3{font-size:1.125rem;font-weight:700;color:hsl(var(--card-foreground))}
-.exp-card .company{color:hsl(var(--muted-foreground));font-size:.9rem;margin-bottom:.5rem}
-.exp-card .date{color:hsl(var(--muted-foreground));font-size:.8rem;margin-bottom:.75rem}
-.exp-card ul{list-style:disc;padding-left:1.25rem;color:hsl(var(--muted-foreground));font-size:.875rem}
-.exp-card ul li{margin-bottom:.375rem}
-
-/* Skills */
-.skills-grid{display:grid;gap:1rem}
-@media(min-width:640px){.skills-grid{grid-template-columns:repeat(2,1fr)}}
-@media(min-width:1024px){.skills-grid{grid-template-columns:repeat(3,1fr)}}
-.skill-card{border:1px solid hsl(var(--border));border-radius:var(--radius);background:hsl(var(--card));padding:1rem}
-.skill-card-inner{display:flex;flex-direction:column;justify-content:space-between;min-height:230px;padding:1.5rem}
-.skill-card-inner h3{font-weight:700;margin-bottom:.5rem;color:hsl(var(--card-foreground))}
-.skill-card-inner p{color:hsl(var(--muted-foreground));font-size:.875rem}
-.stars{display:flex;gap:.25rem;margin-top:.5rem}
-.stars svg{width:1rem;height:1rem;fill:hsl(var(--accent))}
-
-/* Footer */
-footer{border-top:1px solid hsl(var(--border));padding:2.5rem 1.5rem;position:relative;z-index:1}
-footer .container{display:flex;align-items:center;justify-content:center;gap:2rem;flex-wrap:wrap}
-</style>
 </head>
-<body>
 
-<canvas id="particles-canvas"></canvas>
+<body id="top">
 
-<nav>
-  <div class="container-wide">
-    <a href="./index.html" class="logo">Catalina Reyes</a>
-    <div class="nav-links">
-      <a href="./index.html">Inicio</a>
-      <a href="./projects/index.html">Proyectos</a>
-      <a href="./experience/index.html">Trayectoria</a>
-      <a href="./skills/index.html">Habilidades</a>
-      <a href="./contact/index.html">Contacto</a>
-    </div>
-  </div>
-</nav>
+   <section id="intro">
 
-<section class="hero" id="home">
-  <div class="hero-inner">
-    <img src="./profile-img.jpg" alt="Catalina Reyes Neira">
-    <h1>Catalina Reyes Neira</h1>
-    <h3>Relaciones Públicas mención Marketing</h3>
-    <p>Comunicación estratégica, gestión cultural y relaciones públicas para proyectos con impacto territorial.</p>
-    <div class="hero-actions">
-      <a href="#about" class="btn btn-primary">Sobre Mí</a>
-      <a href="#projects" class="btn btn-outline">Proyectos</a>
-    </div>
-    <div class="contact-links">
-      <a href="mailto:catareyesneira@gmail.com">
-        <svg stroke="currentColor" fill="currentColor" viewBox="0 0 24 24"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg>
-        catareyesneira@gmail.com
-      </a>
-      <a href="tel:+56933329123">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-        +569 333 29 123
-      </a>
-    </div>
-    <div class="chevron-down">
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
-    </div>
-  </div>
-</section>
+      <div class="intro-overlay"></div>
+    	<canvas id="particles-canvas"></canvas>
 
-<section id="about">
-  <div class="container">
-    <h2>Sobre Mí</h2>
-    <div class="section-content">
-      <p>¡Hola! Soy Cata Reyes, Relacionadora Pública con mención en Marketing, especializada en comunicación estratégica y gestión cultural. Cuento con experiencia liderando planes de difusión para proyectos y eventos de alto impacto territorial, integrando medios digitales, tradicionales y vinculación con actores clave.</p>
-      <p>Me enfoco en diseñar estrategias que no solo comuniquen, sino que generen resultados concretos: mayor visibilidad, participación de audiencias y posicionamiento de proyectos. He trabajado con municipalidades, fundaciones y organizaciones culturales, articulando contenidos, medios y comunidades de manera coherente y efectiva.</p>
-      <p>Me motiva contribuir a proyectos con sentido, donde la comunicación sea una herramienta real de transformación y conexión con las personas.</p>
-    </div>
-  </div>
-</section>
+    	<div class="intro-content">
+    		<div class="row">
 
-<section id="projects" class="muted">
-  <div class="container-wide">
-    <h2>Proyectos</h2>
-    <p class="subtitle">Proyectos culturales y de comunicación.</p>
-    <div class="projects-grid">
-      <div class="card">
-        <img class="card-img" src="./gaviotas/Captura_de_pantalla_2026-06-09_a_la_s__6.33.37_p.m..png" alt="Fundación Cultural Tierra de Gaviotas">
-        <div class="card-body">
-          <h5>Fundación Cultural Tierra de Gaviotas</h5>
-          <p>Lidero el diseño e implementación de estrategias comunicacionales para una fundación cultural sin fines de lucro en Ancud, Chiloé.</p>
-          <div class="card-tags"><span class="tag">Comunicación estratégica</span><span class="tag">Gestión cultural</span><span class="tag">Community Management</span></div>
-          <a href="./projects/gaviotas-rock/index.html" class="btn btn-outline">Ver más</a>
-        </div>
-      </div>
-      <div class="card">
-        <img class="card-img" src="./gaviotas/Captura_de_pantalla_2026-06-09_a_la_s__6.33.43_p.m..png" alt="Festival de Gaviotas">
-        <div class="card-body">
-          <h5>Festival de Gaviotas</h5>
-          <p>Festival multicultural anual en Ancud, Chiloé, que promueve expresiones artísticas y el patrimonio del Archipiélago.</p>
-          <div class="card-tags"><span class="tag">Eventos</span><span class="tag">Gestión Cultural</span><span class="tag">Producción</span></div>
-          <a href="./projects/gaviotas-rock/index.html" class="btn btn-outline">Ver más</a>
-        </div>
-      </div>
-      <div class="card">
-        <img class="card-img" src="./gaviotas/Captura_de_pantalla_2026-06-09_a_la_s__6.33.50_p.m..png" alt="Gaviotas on the Rock">
-        <div class="card-body">
-          <h5>Gaviotas on the Rock</h5>
-          <p>Evento anual que celebra el Día Nacional del Rock, fusionando música y patrimonio local en Ancud, Chiloé.</p>
-          <div class="card-tags"><span class="tag">Eventos</span><span class="tag">Gestión Cultural</span><span class="tag">Producción</span></div>
-          <a href="./projects/gaviotas-rock/index.html" class="btn btn-outline">Ver más</a>
-        </div>
-      </div>
-    </div>
-    <div class="text-center mt-4">
-      <a href="./projects/index.html" class="btn btn-outline">Ver Todos</a>
-    </div>
-  </div>
-</section>
+    			<div class="col-twelve">
 
-<section id="experience">
-  <div class="container-wide">
-    <h2>Trayectoria</h2>
-    <p class="subtitle">Formación académica y experiencia profesional.</p>
-    <div class="exp-grid">
-      <div class="exp-card">
-        <h3>Encargada de Comunicaciones</h3>
-        <div class="company">Fundación Cultural Tierra de Gaviotas</div>
-        <div class="date">Enero 2022 - Presente · Ancud, Chiloé</div>
-        <ul><li>Lidero el diseño e implementación de estrategias comunicacionales en formatos online y offline.</li><li>Potenciar la visibilidad institucional y optimizar la difusión de proyectos y eventos culturales.</li><li>Articulación de contenidos, plataformas y audiencias para generar mayor alcance y posicionamiento.</li></ul>
-      </div>
-      <div class="exp-card">
-        <h3>Encargada de Comunicaciones</h3>
-        <div class="company">Festival de Gaviotas</div>
-        <div class="date">Enero 2022 - Presente · Ancud, Chiloé</div>
-        <ul><li>Lidero el diseño e implementación de la estrategia comunicacional del festival.</li><li>Planificación y ejecución de contenidos, coordinación con canales de televisión para transmisión en directo.</li><li>Gestión de auspiciadores y actores clave para el posicionamiento del evento.</li></ul>
-      </div>
-      <div class="exp-card">
-        <h3>Encargada de Comunicaciones</h3>
-        <div class="company">Gaviotas on the Rock</div>
-        <div class="date">Enero 2022 - Presente · Ancud, Chiloé</div>
-        <ul><li>Lidero la estrategia comunicacional del evento, integrando planificación y ejecución de contenidos.</li><li>Coordinación con canales de televisión regional para transmisión en directo.</li><li>Gestión de auspiciadores y actores clave para el posicionamiento del evento.</li></ul>
-      </div>
-    </div>
-    <div class="text-center mt-4">
-      <a href="./experience/index.html" class="btn btn-outline">Ver Todo</a>
-    </div>
-  </div>
-</section>
+	   			<h1>Catalina Reyes Neira.</h1>
 
-<section id="skills" class="muted">
-  <div class="container-wide">
-    <h2>Habilidades</h2>
-    <p class="subtitle">Habilidades y certificaciones profesionales.</p>
-    <div class="skills-grid">
-      <div class="skill-card">
-        <div class="skill-card-inner">
-          <svg stroke="currentColor" fill="currentColor" viewBox="0 0 20 20" width="50" height="50"><path fill-rule="evenodd" d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57A22.952 22.952 0 0110 13a22.95 22.95 0 01-8-1.43V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm1 5a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z"/><path d="M2 13.692V16a2 2 0 002 2h12a2 2 0 002-2v-2.308A24.974 24.974 0 0110 15c-2.796 0-5.487-.46-8-1.308z"/></svg>
-          <div><h3>Gestión cultural</h3><p>Coordinación de proyectos culturales y patrimoniales con enfoque territorial.</p></div>
-          <div class="stars"><svg viewBox="0 0 22 20"><path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/></svg><svg viewBox="0 0 22 20"><path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/></svg><svg viewBox="0 0 22 20"><path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/></svg><svg viewBox="0 0 22 20"><path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/></svg><svg viewBox="0 0 22 20"><path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/></svg></div>
-        </div>
-      </div>
-      <div class="skill-card">
-        <div class="skill-card-inner">
-          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="16" height="20" x="4" y="2" rx="2" ry="2"/><path d="M9 22v-4h6v4"/><path d="M8 6h.01"/><path d="M16 6h.01"/><path d="M12 6h.01"/><path d="M12 10h.01"/><path d="M12 14h.01"/><path d="M16 10h.01"/><path d="M16 14h.01"/><path d="M8 10h.01"/><path d="M8 14h.01"/></svg>
-          <div><h3>Gestión de proveedores</h3><p>Vinculación con proveedores, auspiciadores y medios de comunicación.</p></div>
-          <div class="stars"><svg viewBox="0 0 22 20"><path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/></svg><svg viewBox="0 0 22 20"><path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/></svg><svg viewBox="0 0 22 20"><path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/></svg><svg viewBox="0 0 22 20"><path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/></svg><svg viewBox="0 0 22 20"><path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/></svg></div>
-        </div>
-      </div>
-      <div class="skill-card">
-        <div class="skill-card-inner">
-          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/></svg>
-          <div><h3>Producción de eventos</h3><p>Planificación, coordinación y producción de eventos presenciales y transmitidos en vivo.</p></div>
-          <div class="stars"><svg viewBox="0 0 22 20"><path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/></svg><svg viewBox="0 0 22 20"><path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/></svg><svg viewBox="0 0 22 20"><path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/></svg><svg viewBox="0 0 22 20"><path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/></svg><svg viewBox="0 0 22 20"><path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/></svg></div>
-        </div>
-      </div>
-      <div class="skill-card">
-        <div class="skill-card-inner">
-          <svg stroke="currentColor" fill="currentColor" viewBox="0 0 24 24" width="50" height="50"><path d="M7.5 6.5C7.5 8.981 9.519 11 12 11s4.5-2.019 4.5-4.5S14.481 2 12 2 7.5 4.019 7.5 6.5zM20 21h1v-1c0-3.859-3.141-7-7-7h-4c-3.86 0-7 3.141-7 7v1h17z"/></svg>
-          <div><h3>Trabajo en equipo</h3><p>Colaboración efectiva con equipos multidisciplinarios y comunidades.</p></div>
-          <div class="stars"><svg viewBox="0 0 22 20"><path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/></svg><svg viewBox="0 0 22 20"><path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/></svg><svg viewBox="0 0 22 20"><path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/></svg><svg viewBox="0 0 22 20"><path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/></svg><svg viewBox="0 0 22 20"><path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/></svg></div>
-        </div>
-      </div>
-      <div class="skill-card">
-        <div class="skill-card-inner">
-          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/></svg>
-          <div><h3>Estrategias comunicacionales</h3><p>Diseño e implementación de planes de comunicación online y offline.</p></div>
-          <div class="stars"><svg viewBox="0 0 22 20"><path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/></svg><svg viewBox="0 0 22 20"><path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/></svg><svg viewBox="0 0 22 20"><path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/></svg><svg viewBox="0 0 22 20"><path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/></svg><svg viewBox="0 0 22 20"><path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/></svg></div>
-        </div>
-      </div>
-      <div class="skill-card">
-        <div class="skill-card-inner">
-          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></svg>
-          <div><h3>Redacción de contenidos</h3><p>Creación de contenidos, guiones y piezas corporativas para diversos formatos.</p></div>
-          <div class="stars"><svg viewBox="0 0 22 20"><path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/></svg><svg viewBox="0 0 22 20"><path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/></svg><svg viewBox="0 0 22 20"><path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/></svg><svg viewBox="0 0 22 20"><path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/></svg><svg viewBox="0 0 22 20"><path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/></svg></div>
-        </div>
-      </div>
-    </div>
-    <div class="text-center mt-4">
-      <a href="./skills/index.html" class="btn btn-outline">Ver Todo</a>
-    </div>
-  </div>
-</section>
+	   			<p class="intro-position">
+	   				<span>Relaciones Públicas</span>
+	   				<span>Comunicación Estratégica</span>
+	   			</p>
 
-<footer>
-  <div class="container">
-    <a href="mailto:catareyesneira@gmail.com" style="display:inline-flex;align-items:center;gap:.375rem;color:hsl(var(--muted-foreground));font-size:.875rem">
-      <svg stroke="currentColor" fill="currentColor" viewBox="0 0 24 24" width="20" height="20"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg>
-      catareyesneira@gmail.com
-    </a>
-    <a href="tel:+56933329123" style="display:inline-flex;align-items:center;gap:.375rem;color:hsl(var(--muted-foreground));font-size:.875rem">
-      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-      +569 333 29 123
-    </a>
-  </div>
-</footer>
+	   			<a class="button stroke smoothscroll" href="#about" title="">Más sobre mí</a>
 
-<script>
-(function(){
-  var c=document.getElementById('particles-canvas'),ctx=c.getContext('2d');
-  var particles=[],mouse={x:null,y:null};
-  function resize(){c.width=window.innerWidth;c.height=window.innerHeight}
-  window.addEventListener('resize',resize);resize();
-  window.addEventListener('mousemove',function(e){mouse.x=e.clientX;mouse.y=e.clientY});
-  var colors=['hsla(147,56%,67%,','hsla(186,65%,40%,','hsla(60,56%,83%,','hsla(41,74%,55%,'];
-  var count=Math.min(60,Math.floor(window.innerWidth/15));
-  for(var i=0;i<count;i++){
-    particles.push({
-      x:Math.random()*c.width,y:Math.random()*c.height,
-      vx:(Math.random()-0.5)*1.5,vy:(Math.random()-0.5)*1.5,
-      r:Math.random()*2+1,o:0,
-      life:Math.random()*200,c:colors[Math.random()*colors.length|0]
-    });
-  }
-  function animate(){
-    ctx.clearRect(0,0,c.width,c.height);
-    for(var i=0;i<particles.length;i++){
-      var p=particles[i];
-      p.life++;
-      if(p.life<60)p.o=p.life/60;
-      else if(p.life>140)p.o=(200-p.life)/60;
-      else p.o=1;
-      if(p.life>=200){
-        p.life=0;p.x=Math.random()*c.width;p.y=Math.random()*c.height;
-        p.vx=(Math.random()-0.5)*1.5;p.vy=(Math.random()-0.5)*1.5;
-        p.c=colors[Math.random()*colors.length|0];
+	   		</div>
+
+    		</div>
+    	</div>
+
+    	<ul class="intro-social">
+         <li><a href="https://www.linkedin.com/in/catareyesneira" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
+         <li><a href="mailto:catareyesneira@gmail.com"><i class="fa fa-envelope"></i></a></li>
+      </ul>
+
+   </section>
+
+   <section id="about">
+
+   	<div class="row section-intro">
+   		<div class="col-twelve">
+
+   			<h5>Sobre mí</h5>
+   			<h1>Un poco sobre mi trayectoria.</h1>
+
+   			<div class="intro-info">
+
+   				<img src="images/profile-pic.jpg" alt="Foto de perfil">
+
+   				<p class="lead">Relacionadora Pública con mención en Marketing, especializada en comunicación estratégica y gestión cultural. Mi trabajo se enfoca en potenciar la visibilidad institucional, articular contenidos y audiencias, y generar mayor alcance y posicionamiento para proyectos culturales y sociales.</p>
+   			</div>
+
+   		</div>
+   	</div>
+
+   	<div class="row about-content">
+
+   		<div class="col-six tab-full">
+
+   			<h3>Perfil</h3>
+   			<p>Profesional con experiencia en comunicación estratégica, producción de eventos y gestión cultural. He liderado estrategias comunicacionales para fundaciones, festivales y proyectos financiados por el Gobierno Regional, coordinando equipos, medios de comunicación y auspiciadores.</p>
+
+   			<ul class="info-list">
+   				<li>
+   					<strong>Nombre:</strong>
+   					<span>Catalina Reyes Neira</span>
+   				</li>
+   				<li>
+   					<strong>Cargo:</strong>
+   					<span>Relacionadora Pública</span>
+   				</li>
+   				<li>
+   					<strong>Email:</strong>
+   					<span>catareyesneira@gmail.com</span>
+   				</li>
+   				<li>
+   					<strong>Teléfono:</strong>
+   					<span>+569 333 29 123</span>
+   				</li>
+   				<li>
+   					<strong>Ubicación:</strong>
+   					<span>Ancud, Chiloé, Chile</span>
+   				</li>
+   			</ul>
+
+   		</div>
+
+   		<div class="col-six tab-full">
+
+   			<h3>Habilidades</h3>
+   			<p>Competencias clave desarrolladas a través de experiencia profesional en comunicación, gestión cultural y producción de eventos.</p>
+
+				<ul class="skill-bars">
+				   <li>
+				   	<div class="progress percent100"><span>100%</span></div>
+				   	<strong>Comunicación Estratégica</strong>
+				   </li>
+				   <li>
+				   	<div class="progress percent100"><span>100%</span></div>
+				   	<strong>Gestión Cultural</strong>
+				   </li>
+				   <li>
+				   	<div class="progress percent100"><span>100%</span></div>
+				   	<strong>Community Management</strong>
+				   </li>
+				   <li>
+				   	<div class="progress percent100"><span>100%</span></div>
+				   	<strong>Producción de Eventos</strong>
+				   </li>
+				   <li>
+				   	<div class="progress percent100"><span>100%</span></div>
+				   	<strong>Redacción de Contenidos</strong>
+				   </li>
+				   <li>
+				   	<div class="progress percent100"><span>100%</span></div>
+				   	<strong>Marketing Digital</strong>
+				   </li>
+				</ul>
+
+   		</div>
+
+   	</div>
+
+   	<div class="row button-section">
+   		<div class="col-twelve">
+   			<a href="#contact" title="Contáctame" class="button stroke smoothscroll">Contáctame</a>
+   			<a href="#" title="Descargar CV" class="button button-primary">Descargar CV</a>
+   		</div>
+   	</div>
+
+   </section>
+
+	<section id="resume" class="grey-section">
+
+		<div class="row section-intro">
+   		<div class="col-twelve">
+
+   			<h5>Trayectoria</h5>
+   			<h1>Mi experiencia y formación.</h1>
+
+   			<p class="lead">Comunicadora estratégica con enfoque en la gestión cultural y la producción de eventos. Mi carrera combina la planificación comunicacional con la ejecución de proyectos que conectan comunidades, instituciones y audiencias.</p>
+
+   		</div>
+   	</div>
+
+   	<div class="row resume-timeline">
+
+   		<div class="col-twelve resume-header">
+
+   			<h2>Experiencia Laboral</h2>
+
+   		</div>
+
+   		<div class="col-twelve">
+
+   			<div class="timeline-wrap">
+
+   				<div class="timeline-block">
+
+	   				<div class="timeline-ico">
+	   					<i class="fa fa-briefcase"></i>
+	   				</div>
+
+	   				<div class="timeline-header">
+	   					<h3>Encargada de Comunicaciones</h3>
+	   					<p>Enero 2022 - Presente</p>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h4>Fundación Cultural Tierra de Gaviotas</h4>
+	   					<p>Lidero el diseño e implementación de estrategias comunicacionales en formatos online y offline para una fundación cultural sin fines de lucro en Ancud, Chiloé. Potencio la visibilidad institucional y optimizo la difusión de proyectos y eventos culturales, articulando contenidos, plataformas y audiencias. He logrado incrementar la visibilidad digital alcanzando 7.437 seguidores en redes sociales, coordinar la difusión de eventos con cobertura en medios nacionales y gestionar alianzas con 40 canales de televisión regionales.</p>
+	   				</div>
+
+	   			</div>
+
+	   			<div class="timeline-block">
+
+	   				<div class="timeline-ico">
+	   					<i class="fa fa-briefcase"></i>
+	   				</div>
+
+	   				<div class="timeline-header">
+	   					<h3>Encargada de Comunicaciones</h3>
+	   					<p>Enero 2022 - Presente</p>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h4>Festival de Gaviotas</h4>
+	   					<p>Lidero la estrategia comunicacional del festival multicultural anual de Ancud, articulando medios digitales, tradicionales y alianzas estratégicas. Coordino la transmisión en directo con canales de televisión regional y gestiono auspiciadores. El festival ha alcanzado entre 100 y 300 asistentes presenciales, transmisiones en vivo con 3.000 a 8.000 visualizaciones, y la gestión de 10 a 20 auspiciadores por evento.</p>
+	   				</div>
+
+	   			</div>
+
+	   			<div class="timeline-block">
+
+	   				<div class="timeline-ico">
+	   					<i class="fa fa-briefcase"></i>
+	   				</div>
+
+	   				<div class="timeline-header">
+	   					<h3>Encargada de Comunicaciones</h3>
+	   					<p>Enero 2022 - Presente</p>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h4>Gaviotas on the Rock</h4>
+	   					<p>Lidero la estrategia comunicacional del evento anual que celebra el Día Nacional del Rock en Ancud. Integro la planificación y ejecución de contenidos en plataformas digitales y medios tradicionales, coordinando la difusión con canales de televisión regional para transmisión en directo. El evento convoca entre 100 y 200 asistentes presenciales con transmisión en vivo de 3.000 a 8.000 visualizaciones.</p>
+	   				</div>
+
+	   			</div>
+
+	   			<div class="timeline-block">
+
+	   				<div class="timeline-ico">
+	   					<i class="fa fa-briefcase"></i>
+	   				</div>
+
+	   				<div class="timeline-header">
+	   					<h3>Encargada de Difusión</h3>
+	   					<p>Enero 2024 - Diciembre 2024</p>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h4>Parque Mawünko</h4>
+	   					<p>Diseñé y ejecuté el plan de difusión del proyecto "Acercando a la comunidad ancuditana a la unión de las aguas del Parque Mawünko", financiado por el Gobierno Regional de Los Lagos. Desarrollé una estrategia comunicacional orientada a la participación comunitaria, logrando la capacidad máxima de 200 asistentes y un alcance digital estimado de 6.000+ cuentas.</p>
+	   				</div>
+
+	   			</div>
+
+	   			<div class="timeline-block">
+
+	   				<div class="timeline-ico">
+	   					<i class="fa fa-briefcase"></i>
+	   				</div>
+
+	   				<div class="timeline-header">
+	   					<h3>Profesional de Apoyo en Cultura y Educación</h3>
+	   					<p>Enero 2019 - Diciembre 2019</p>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h4>Ilustre Municipalidad de Quinta de Tilcoco</h4>
+	   					<p>Participé en la planificación y gestión del proyecto Museo y Centro Cultural de Quinta de Tilcoco. Fui profesional de apoyo en un taller de Atención al Cliente para estudiantes de enseñanza media y representé al municipio en una gobernanza regional con enfoque turístico.</p>
+	   				</div>
+
+	   			</div>
+
+   			</div>
+
+   		</div>
+
+   	</div>
+
+   	<div class="row resume-timeline">
+
+   		<div class="col-twelve resume-header">
+
+   			<h2>Formación Académica</h2>
+
+   		</div>
+
+   		<div class="col-twelve">
+
+   			<div class="timeline-wrap">
+
+   				<div class="timeline-block">
+
+	   				<div class="timeline-ico">
+	   					<i class="fa fa-graduation-cap"></i>
+	   				</div>
+
+	   				<div class="timeline-header">
+	   					<h3>Neuromarketing</h3>
+	   					<p>2021 - 2022</p>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h4>Unegocios, Universidad de Chile</h4>
+	   					<p>Diplomado en Neuromarketing, especialización en el estudio del comportamiento del consumidor y estrategias de marketing basadas en neurociencia aplicada.</p>
+	   				</div>
+
+	   			</div>
+
+	   			<div class="timeline-block">
+
+	   				<div class="timeline-ico">
+	   					<i class="fa fa-graduation-cap"></i>
+	   				</div>
+
+	   				<div class="timeline-header">
+	   					<h3>Relaciones Públicas mención Marketing</h3>
+	   					<p>2014 - 2018</p>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h4>Instituto Profesional Duoc UC, Sede San Carlos de Apoquindo</h4>
+	   					<p>Carrera profesional enfocada en comunicación estratégica, relaciones institucionales y marketing, con formación en gestión de la comunicación corporativa y organizacional.</p>
+	   				</div>
+
+	   			</div>
+
+	   			<div class="timeline-block">
+
+	   				<div class="timeline-ico">
+	   					<i class="fa fa-graduation-cap"></i>
+	   				</div>
+
+	   				<div class="timeline-header">
+	   					<h3>Práctica Profesional</h3>
+	   					<p>2017</p>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h4>Instituto de Nutrición y Tecnología de los Alimentos (INTA)</h4>
+	   					<p>Práctica profesional en comunicación y relaciones públicas en el Instituto de Nutrición y Tecnología de los Alimentos, dependiente de la Universidad de Chile.</p>
+	   				</div>
+
+	   			</div>
+
+	   			<div class="timeline-block">
+
+	   				<div class="timeline-ico">
+	   					<i class="fa fa-graduation-cap"></i>
+	   				</div>
+
+	   				<div class="timeline-header">
+	   					<h3>Práctica Laboral</h3>
+	   					<p>2016</p>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h4>Instituto Profesional Duoc UC, Sede San Carlos de Apoquindo</h4>
+	   					<p>Práctica laboral en el área de comunicaciones y relaciones públicas, aplicando conocimientos en gestión de la comunicación organizacional.</p>
+	   				</div>
+
+	   			</div>
+
+	   			<div class="timeline-block">
+
+	   				<div class="timeline-ico">
+	   					<i class="fa fa-certificate"></i>
+	   				</div>
+
+	   				<div class="timeline-header">
+	   					<h3>Certificaciones</h3>
+	   					<p>2022 - 2024</p>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h4>Diseño y Gestión de Comunicación Estratégica</h4>
+	   					<p>Certificaciones profesionales en comunicación estratégica:<br>
+	   					• Diseño y Gestión de Estrategia Comunicacional<br>
+	   					• Gestión y Asuntos Públicos<br>
+	   					• Diseño y Gestión de Comunicación Relacional<br>
+	   					• Diseño y Gestión de Comunicación Corporativa</p>
+	   				</div>
+
+	   			</div>
+
+   			</div>
+
+   		</div>
+
+   	</div>
+
+	</section>
+
+	<section id="portfolio">
+
+		<div class="row section-intro">
+   		<div class="col-twelve">
+
+   			<h5>Portafolio</h5>
+   			<h1>Conoce mis proyectos.</h1>
+
+   			<p class="lead">Proyectos de comunicación estratégica y gestión cultural desarrollados en Ancud, Chiloé, abarcando desde la difusión institucional hasta la producción de eventos multiculturales.</p>
+
+   		</div>
+   	</div>
+
+   	<div class="row portfolio-content">
+
+   		<div class="col-twelve">
+
+	         <div id="folio-wrapper" class="block-1-2 block-mob-full stack">
+
+	         	<div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="images/portfolio/Captura_de_pantalla_2026-06-09_a_la_s__6.33.37_p.m..png" alt="Fundación Gaviotas">
+	                  <a href="#modal-01" class="overlay">
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+		     					       <h3 class="folio-title">Fundación Gaviotas</h3>
+		     					    	 <span class="folio-types">
+		     					       	  Comunicación Estratégica
+		     					       </span>
+		     					   </div>
+	                     </div>
+	                  </a>
+	               </div>
+	        		</div>
+
+	        		<div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="images/portfolio/Captura_de_pantalla_2026-06-09_a_la_s__6.33.43_p.m..png" alt="Festival de Gaviotas">
+	               	<a href="#modal-02" class="overlay">
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+	                     		<h3 class="folio-title">Festival de Gaviotas</h3>
+		     					    	<span class="folio-types">
+		     					       	  Producción de Eventos
+		     					      </span>
+		     					   </div>
+	                     </div>
+	                  </a>
+	               </div>
+	        		</div>
+
+	            <div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="images/portfolio/Captura_de_pantalla_2026-06-09_a_la_s__6.34.35_p.m..png" alt="Gaviotas on the Rock">
+	                  <a href="#modal-03" class="overlay">
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+	                     		<h3 class="folio-title">Gaviotas on the Rock</h3>
+		     					    	<span class="folio-types">
+		     					       	  Gestión Cultural
+		     					      </span>
+		     					   </div>
+	                     </div>
+	                  </a>
+	               </div>
+	        		</div>
+
+	            <div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="images/portfolio/Captura_de_pantalla_2026-06-09_a_la_s__6.34.44_p.m..png" alt="Parque Mawünko">
+	                  <a href="#modal-04" class="overlay">
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+	                     		<h3 class="folio-title">Parque Mawünko</h3>
+		     					    	<span class="folio-types">
+		     					       	  Vinculación Comunitaria
+		     					      </span>
+		     					   </div>
+	                     </div>
+	                  </a>
+	               </div>
+	        		</div>
+
+	        		<div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="images/portfolio/Captura_de_pantalla_2026-06-09_a_la_s__6.33.37_p.m..png" alt="Artesanales de Chiloé">
+	                  <a href="#modal-05" class="overlay">
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+	                     		<h3 class="folio-title">Artesanales de Chiloé</h3>
+		     					    	<span class="folio-types">
+		     					       	  Marketing
+		     					      </span>
+		     					   </div>
+	                     </div>
+	                  </a>
+	               </div>
+	        		</div>
+
+	            <div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="images/portfolio/Captura_de_pantalla_2026-06-09_a_la_s__6.33.43_p.m..png" alt="Municipalidad de Quinta de Tilcoco">
+	                  <a href="#modal-06" class="overlay">
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+	                     		<h3 class="folio-title">Quinta de Tilcoco</h3>
+		     					    	<span class="folio-types">
+		     					       	  Gestión Cultural
+		     					      </span>
+		     					   </div>
+	                     </div>
+	                  </a>
+	               </div>
+	        		</div>
+
+	            <div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="images/portfolio/Captura_de_pantalla_2026-06-09_a_la_s__6.34.39_p.m..png" alt="Formación Comunitaria">
+	                  <a href="#modal-07" class="overlay">
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+	                     		<h3 class="folio-title">Formación Comunitaria</h3>
+		     					    	<span class="folio-types">
+		     					       	  Vinculación Comunitaria
+		     					      </span>
+		     					   </div>
+	                     </div>
+	                  </a>
+	               </div>
+	        		</div>
+
+	            <div id="modal-01" class="popup-modal slider mfp-hide">
+
+				     	<div class="media">
+				     		<img src="images/portfolio/Captura_de_pantalla_2026-06-09_a_la_s__6.33.37_p.m..png" alt="" />
+				     	</div>
+
+					   <div class="description-box">
+					      <h4>Fundación Cultural Tierra de Gaviotas</h4>
+					      <p>Fundación sin fines de lucro, voluntaria y autogestionada de Ancud, Chiloé, que difunde e impulsa instancias de despliegue cultural y patrimonial. Lideré el diseño e implementación de estrategias comunicacionales online y offline, logrando incrementar la visibilidad digital a 7.437 seguidores y coordinar la difusión con 40 canales de televisión regionales.</p>
+					      <div class="categories">Comunicación Estratégica, Gestión Cultural, Community Management</div>
+					   </div>
+
+			         <div class="link-box">
+			            <a href="https://www.instagram.com/fundaciontierradegaviotas/" target="_blank">Detalles</a>
+					      <a href="#" class="popup-modal-dismiss">Cerrar</a>
+			         </div>
+
+				   </div>
+
+				   <div id="modal-02" class="popup-modal slider mfp-hide">
+
+				     	<div class="media">
+				     		<img src="images/portfolio/Captura_de_pantalla_2026-06-09_a_la_s__6.33.43_p.m..png" alt="" />
+				     	</div>
+
+					   <div class="description-box">
+					      <h4>Festival de Gaviotas</h4>
+					      <p>Encuentro multicultural anual creado por la Fundación Cultural Tierra de Gaviotas desde 2019. Se realiza en Ancud en formato presencial de tres días con transmisión en directo. Lideré la estrategia comunicacional articulando medios digitales, tradicionales y alianzas estratégicas, con alcance de 100 a 300 asistentes y 3.000 a 8.000 visualizaciones en vivo.</p>
+					      <div class="categories">Producción de Eventos, Comunicación Estratégica, Relaciones Públicas</div>
+					   </div>
+
+			         <div class="link-box">
+			            <a href="https://www.instagram.com/fundaciontierradegaviotas/" target="_blank">Detalles</a>
+					      <a href="#" class="popup-modal-dismiss">Cerrar</a>
+			         </div>
+
+				   </div>
+
+				   <div id="modal-03" class="popup-modal slider mfp-hide">
+
+				     	<div class="media">
+				     		<img src="images/portfolio/Captura_de_pantalla_2026-06-09_a_la_s__6.34.35_p.m..png" alt="" />
+				     	</div>
+
+					   <div class="description-box">
+					      <h4>Gaviotas on the Rock</h4>
+					      <p>Evento anual creado por la Fundación Cultural Tierra de Gaviotas desde 2021 que celebra el Día Nacional del Rock, fusionando música y patrimonio local. Formato presencial con transmisión en vivo. Lideré la estrategia comunicacional, coordinando difusión con canales de TV regional y gestionando auspiciadores. Convoca 100 a 200 asistentes con 3.000 a 8.000 visualizaciones en vivo.</p>
+					      <div class="categories">Gestión Cultural, Producción de Eventos, Coordinación de Proyectos</div>
+					   </div>
+
+			         <div class="link-box">
+			            <a href="https://www.instagram.com/fundaciontierradegaviotas/" target="_blank">Detalles</a>
+					      <a href="#" class="popup-modal-dismiss">Cerrar</a>
+			         </div>
+
+				   </div>
+
+				   <div id="modal-04" class="popup-modal slider mfp-hide">
+
+				     	<div class="media">
+				     		<img src="images/portfolio/Captura_de_pantalla_2026-06-09_a_la_s__6.34.44_p.m..png" alt="" />
+				     	</div>
+
+					   <div class="description-box">
+					      <h4>Parque Mawünko</h4>
+					      <p>Proyecto "Acercando a la comunidad ancuditana a la unión de las aguas del Parque Mawünko", financiado por el Gobierno Regional de Los Lagos. Diseñé y ejecuté el plan de difusión con una estrategia orientada a la participación comunitaria, logrando la capacidad máxima de 200 asistentes y un alcance digital de 6.000+ cuentas.</p>
+					      <div class="categories">Vinculación Comunitaria, Marketing Digital, Comunicación Estratégica</div>
+					   </div>
+
+			         <div class="link-box">
+			            <a href="#" class="popup-modal-dismiss">Cerrar</a>
+			         </div>
+
+				   </div>
+
+				   <div id="modal-05" class="popup-modal slider mfp-hide">
+
+				     	<div class="media">
+				     		<img src="images/portfolio/Captura_de_pantalla_2026-06-09_a_la_s__6.33.37_p.m..png" alt="" />
+				     	</div>
+
+					   <div class="description-box">
+					      <h4>Artesanales de Chiloé</h4>
+					      <p>Creación y desarrollo del proyecto Artesanales de Chiloé, abarcando desde la construcción de marca hasta la implementación de estrategias de comunicación y contenido. Incluyó gestión de clientes y proveedores, coordinación de ventas y logística, logrando 15+ clientes frecuentes y presencia digital para difusión de productos artesanales locales.</p>
+					      <div class="categories">Marketing, Community Management, Gestión de Proveedores</div>
+					   </div>
+
+			         <div class="link-box">
+			            <a href="#" class="popup-modal-dismiss">Cerrar</a>
+			         </div>
+
+				   </div>
+
+				   <div id="modal-06" class="popup-modal slider mfp-hide">
+
+				     	<div class="media">
+				     		<img src="images/portfolio/Captura_de_pantalla_2026-06-09_a_la_s__6.33.43_p.m..png" alt="" />
+				     	</div>
+
+					   <div class="description-box">
+					      <h4>Municipalidad de Quinta de Tilcoco</h4>
+					      <p>Me desempeñé como profesional de apoyo en el área de cultura y educación, participando en la planificación y gestión del proyecto Museo y Centro Cultural de Quinta de Tilcoco. También impartí un taller de Atención al Cliente a estudiantes de enseñanza media y representé al municipio en una gobernanza regional con enfoque turístico.</p>
+					      <div class="categories">Gestión Cultural, Vinculación Comunitaria, Relaciones Públicas</div>
+					   </div>
+
+			         <div class="link-box">
+			            <a href="https://www.quintadetilcoco.cl" target="_blank">Detalles</a>
+					      <a href="#" class="popup-modal-dismiss">Cerrar</a>
+			         </div>
+
+				   </div>
+
+				   <div id="modal-07" class="popup-modal slider mfp-hide">
+
+				     	<div class="media">
+				     		<img src="images/portfolio/Captura_de_pantalla_2026-06-09_a_la_s__6.34.39_p.m..png" alt="" />
+				     	</div>
+
+					   <div class="description-box">
+					      <h4>Formación y Vinculación Comunitaria</h4>
+					      <p>Espacios formativos abiertos a la comunidad impulsados por la Fundación Cultural Tierra de Gaviotas, orientados a promover el acceso a la cultura, el desarrollo artístico y la participación activa en el territorio. Incluye talleres de batería y cueca para niños, jóvenes y adultos. Me encargué de la difusión efectiva de los talleres, logrando la capacidad completa de participantes.</p>
+					      <div class="categories">Vinculación Comunitaria, Gestión Cultural, Redacción de Contenidos</div>
+					   </div>
+
+			         <div class="link-box">
+			            <a href="#" class="popup-modal-dismiss">Cerrar</a>
+			         </div>
+
+				   </div>
+
+	         </div>
+
+   		</div>
+
+   	</div>
+
+	</section>
+
+	<section id="services">
+
+		<div class="overlay"></div>
+
+		<div class="row section-intro">
+   		<div class="col-twelve">
+
+   			<h5>Servicios</h5>
+   			<h1>¿En qué puedo ayudarte?</h1>
+
+   			<p class="lead">Ofrezco servicios profesionales en comunicación estratégica y gestión cultural, basados en mi experiencia en el sector público, cultural y privado.</p>
+
+   		</div>
+   	</div>
+
+   	<div class="row services-content">
+
+   		<div id="owl-slider" class="owl-carousel services-list">
+
+	      	<div class="service">
+
+	      		<span class="icon"><i class="icon-earth"></i></span>
+
+	            <div class="service-content">
+
+	            	 <h3>Comunicación Estratégica</h3>
+
+		            <p class="desc">Diseño e implementación de planes de comunicación online y offline para organizaciones culturales y sociales. Desarrollo de estrategias que articulan contenidos, plataformas y audiencias para maximizar el alcance y posicionamiento institucional.
+	         		</p>
+
+	         	</div>
+
+				</div>
+
+				<div class="service">
+
+					<span class="icon"><i class="icon-window"></i></span>
+
+	            <div class="service-content">
+
+	            	<h3>Gestión Cultural</h3>
+
+		            <p class="desc">Coordinación de proyectos culturales y patrimoniales con enfoque territorial. Planificación y ejecución de iniciativas que promueven el desarrollo artístico, la participación comunitaria y la puesta en valor del patrimonio local.
+	         		</p>
+
+	            </div>
+
+			   </div>
+
+			   <div class="service">
+
+			   	<span class="icon"><i class="icon-paint-brush"></i></span>
+
+	            <div class="service-content">
+
+	            	<h3>Community Management</h3>
+
+		            <p class="desc">Gestión de redes sociales y creación de identidad corporativa digital. Desarrollo de estrategias de contenido para aumentar la visibilidad, el engagement y el posicionamiento de marcas y organizaciones en el entorno digital.
+	        			</p>
+
+	            </div>
+
+			   </div>
+
+				<div class="service">
+
+					<span class="icon"><i class="icon-toggles"></i></span>
+
+	            <div class="service-content">
+
+	            	<h3>Producción de Eventos</h3>
+
+		            <p class="desc">Planificación, coordinación y producción de eventos presenciales y transmitidos en vivo. Gestión integral de la comunicación, auspiciadores, logística y difusión en medios tradicionales y digitales para eventos culturales y corporativos.
+	         		</p>
+
+	            </div>
+
+				</div>
+
+			   <div class="service">
+
+			   	<span class="icon"><i class="icon-image"></i></span>
+
+	            <div class="service-content">
+
+	            	<h3>Vinculación Comunitaria</h3>
+
+		            <p class="desc">Desarrollo de estrategias de vinculación con comunidades y actores territoriales. Creación de espacios de participación y diálogo entre organizaciones, instituciones y comunidades para fortalecer el impacto social de los proyectos.
+	        			</p>
+
+	            </div>
+
+			   </div>
+
+			   <div class="service">
+
+			   	<span class="icon"><i class="icon-chat"></i></span>
+
+	            <div class="service-content">
+
+	            	 <h3>Redacción de Contenidos</h3>
+
+		            <p class="desc">Creación de contenidos, guiones y piezas corporativas para diversos formatos y plataformas. Redacción de material comunicacional con enfoque estratégico, adaptado a las necesidades de cada audiencia y canal.
+	        			</p>
+
+	            </div>
+
+			   </div>
+
+	      </div>
+
+   	</div>
+
+	</section>
+
+   <section id="contact">
+
+		<div class="row section-intro">
+   		<div class="col-twelve">
+
+   			<h5>Contacto</h5>
+   			<h1>Me encantaría saber de ti.</h1>
+
+   			<p class="lead">Si tienes un proyecto cultural, necesitas asesoría en comunicación estratégica o simplemente quieres conectar, no dudes en escribirme.</p>
+
+   		</div>
+   	</div>
+
+   	<div class="row contact-form">
+
+   		<div class="col-twelve">
+
+            <form name="contactForm" id="contactForm" method="post" action="">
+      			<fieldset>
+
+                  <div class="form-field">
+						   <input name="contactName" type="text" id="contactName" placeholder="Nombre" value="" minlength="2" required="">
+                  </div>
+                  <div class="form-field">
+	      			   <input name="contactEmail" type="email" id="contactEmail" placeholder="Email" value="" required="">
+	               </div>
+                  <div class="form-field">
+	     				   <input name="contactSubject" type="text" id="contactSubject" placeholder="Asunto" value="">
+	               </div>
+                  <div class="form-field">
+	                 	<textarea name="contactMessage" id="contactMessage" placeholder="Mensaje" rows="10" cols="50" required=""></textarea>
+	               </div>
+                 <div class="form-field">
+                     <button class="submitform">Enviar</button>
+                     <div id="submit-loader">
+                        <div class="text-loader">Enviando...</div>
+       				      <div class="s-loader">
+								  	<div class="bounce1"></div>
+								  	<div class="bounce2"></div>
+								  	<div class="bounce3"></div>
+								</div>
+							</div>
+                  </div>
+
+      			</fieldset>
+      		</form>
+
+            <div id="message-warning">
+            </div>
+      		<div id="message-success">
+               <i class="fa fa-check"></i>Tu mensaje fue enviado, ¡gracias!<br>
+      		</div>
+
+         </div>
+
+   	</div>
+
+   	<div class="row contact-info">
+
+   		<div class="col-four tab-full">
+
+   			<div class="icon">
+   				<i class="icon-pin"></i>
+   			</div>
+
+   			<h5>Ubicación</h5>
+
+   			<p>
+            Ancud, Chiloé<br>
+            Región de Los Lagos<br>
+            Chile
+            </p>
+
+   		</div>
+
+   		<div class="col-four tab-full collapse">
+
+   			<div class="icon">
+   				<i class="icon-mail"></i>
+   			</div>
+
+   			<h5>Email</h5>
+
+   			<p>catareyesneira@gmail.com</p>
+
+   		</div>
+
+   		<div class="col-four tab-full">
+
+   			<div class="icon">
+   				<i class="icon-phone"></i>
+   			</div>
+
+   			<h5>Teléfono</h5>
+
+   			<p>+569 333 29 123</p>
+
+   		</div>
+
+   	</div>
+
+	</section>
+
+   <footer>
+     	<div class="row">
+
+     		<div class="col-six tab-full pull-right social">
+
+     			<ul class="footer-social">
+			      <li><a href="https://www.linkedin.com/in/catareyesneira" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
+			      <li><a href="mailto:catareyesneira@gmail.com"><i class="fa fa-envelope"></i></a></li>
+			   </ul>
+
+	      </div>
+
+      	<div class="col-six tab-full">
+	      	<div class="copyright">
+		        	<span>© Copyright Catalina Reyes Neira 2026.</span>
+		         </div>
+	      	</div>
+
+	      	<div id="go-top">
+		         <a class="smoothscroll" title="Volver arriba" href="#top"><i class="fa fa-long-arrow-up"></i></a>
+		      </div>
+
+      	</div>
+   </footer>
+
+   <div id="preloader">
+    	<div id="loader"></div>
+   </div>
+
+   <script src="js/jquery-2.1.3.min.js"></script>
+   <script src="js/plugins.js"></script>
+   <script src="js/main.js"></script>
+   <script>
+      const canvas = document.getElementById("particles-canvas");
+      const ctx = canvas.getContext("2d");
+      let particles = [], w, h;
+      const colors = ["#cc005f", "#ffffff", "#888888"];
+      const count = 60;
+
+      function resize() {
+         const intro = document.getElementById("intro");
+         w = canvas.width = intro.offsetWidth;
+         h = canvas.height = intro.offsetHeight;
       }
-      if(mouse.x!==null){
-        var dx=mouse.x-p.x,dy=mouse.y-p.y,dist=Math.sqrt(dx*dx+dy*dy);
-        if(dist<180&&dist>0){p.vx-=dx/dist*0.08;p.vy-=dy/dist*0.08}
+
+      class Particle {
+         constructor() { this.reset(); }
+         reset() {
+            this.x = Math.random() * w;
+            this.y = Math.random() * h;
+            this.vx = (Math.random() - 0.5) * 0.5;
+            this.vy = (Math.random() - 0.5) * 0.5;
+            this.r = Math.random() * 3 + 1;
+            this.color = colors[Math.floor(Math.random() * colors.length)];
+            this.alpha = Math.random() * 0.3 + 0.1;
+         }
+         update() {
+            this.x += this.vx;
+            this.y += this.vy;
+            if (this.x < 0 || this.x > w) this.vx *= -1;
+            if (this.y < 0 || this.y > h) this.vy *= -1;
+         }
+         draw() {
+            ctx.beginPath();
+            ctx.arc(this.x, this.y, this.r, 0, Math.PI * 2);
+            ctx.fillStyle = this.color;
+            ctx.globalAlpha = this.alpha;
+            ctx.fill();
+         }
       }
-      p.x+=p.vx;p.y+=p.vy;
-      if(p.x<0||p.x>c.width)p.vx*=-1;
-      if(p.y<0||p.y>c.height)p.vy*=-1;
-      p.vx*=0.97;p.vy*=0.97;
-      ctx.beginPath();
-      ctx.arc(p.x,p.y,p.r,0,Math.PI*2);
-      ctx.fillStyle=p.c+p.o+')';
-      ctx.fill();
-    }
-    requestAnimationFrame(animate);
-  }
-  animate();
-})();
-</script>
+
+      function init() {
+         resize();
+         particles = [];
+         for (let i = 0; i < count; i++) particles.push(new Particle());
+      }
+
+      function drawLines() {
+         for (let i = 0; i < particles.length; i++) {
+            for (let j = i + 1; j < particles.length; j++) {
+               const dx = particles[i].x - particles[j].x;
+               const dy = particles[i].y - particles[j].y;
+               const dist = Math.sqrt(dx * dx + dy * dy);
+               if (dist < 160) {
+                  ctx.beginPath();
+                  ctx.moveTo(particles[i].x, particles[i].y);
+                  ctx.lineTo(particles[j].x, particles[j].y);
+                  ctx.strokeStyle = "#555555";
+                  ctx.globalAlpha = 0.12 * (1 - dist / 160);
+                  ctx.lineWidth = 1;
+                  ctx.stroke();
+               }
+            }
+         }
+      }
+
+      function animate() {
+         ctx.clearRect(0, 0, w, h);
+         drawLines();
+         particles.forEach(p => { p.update(); p.draw(); });
+         ctx.globalAlpha = 1;
+         requestAnimationFrame(animate);
+      }
+
+      window.addEventListener("resize", resize);
+      init();
+      animate();
+   </script>
+
 </body>
+
 </html>
